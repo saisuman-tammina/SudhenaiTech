@@ -10849,6 +10849,33 @@ html {
 
 /* styles starts from here */
 
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* header.nav-fixed {
+  width: 100%;
+  position: fixed;
+  transition: 0.3s ease-in-out;
+} */
+
+.nav-active {
+  background-color: #000084;
+  box-shadow: 5px -1px 12px -5px grey;
+}
+
+@media (min-width:768px) and (max-width:991px){
+  .pagelinks{
+    display: flex;
+    justify-content: end;
+  }
+}
+
+
 .contact-details{
   background-color: #0074BE;
   padding: 5px;
@@ -10859,7 +10886,22 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
 }
+
+@media (min-width:768px) and (max-width: 991px){
+  .main-heading{
+      margin-top: 84px !important;
+  }
+}
+
+@media (max-width:767px){
+  .main-heading{
+      margin-top: 292px !important;
+  }
+}
+
 
 @media (max-width:480px){
   .header-content h1 {
