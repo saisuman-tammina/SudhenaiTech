@@ -10855,7 +10855,7 @@ html {
   color: #ffff;
 }
 .main-headers{
-  background-image: url("../assets/images/landingimg.svg");
+  background-image: url("/assets/images/landingimg.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
