@@ -10850,7 +10850,7 @@ html {
 /* styles starts from here */
 
 header{
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 99;
@@ -10863,9 +10863,9 @@ header{
   transition: 0.3s ease-in-out;
 } */
 
-.nav-active {
-  background-color: #000084;
-  box-shadow: 5px -1px 12px -5px grey;
+.nav-active{
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 @media (min-width:768px) and (max-width:991px){
@@ -10924,7 +10924,7 @@ header{
 
 @media (min-width:1200px){
   .main-headers{
-    height: 812px;
+    height: 680px;
   }
 }
 
@@ -10963,11 +10963,30 @@ header{
 
 #more {display: none;}
 
+.main-img{
+  position: absolute;
+  top: 12px;
+  /* left: 56px; */
+}
+@media (max-width:480px){
+  .main-img{
+    left: 12px;
+  }
+}
+
 .navbar{
   padding: 0;
 }
 .navbar-nav{
   padding: 8px 45px;
+}
+
+@media (max-width:991px){
+  nav ul{
+    background-color: #0074BE;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
 }
 
 .collapse ul{
@@ -11276,4 +11295,77 @@ color: white;
 
 .sticky + .content {
   padding-top: 60px;
+}
+.nav-link{
+  color: black !important ;
+}
+
+.whats-app{
+  width: 40px;
+  /* background: #3498db; */
+  position: fixed;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  font-weight: 700;
+  margin-left: 5px;
+  font-size: 16px;
+  text-decoration: none !important;
+  top: 278px;
+  height: 38px;
+  border: 1px solid 	#25D366;
+  border-radius: 5px;
+}
+
+.whats-app a{
+  visibility: hidden;
+  opacity: 0;
+  text-decoration: none !important;
+}
+
+.whats-app:hover{
+  width: 220px;
+  transition: all .25s ease;
+  text-decoration: none !important;
+  a{
+      visibility: visible;
+      margin-left: 10px;
+      color: #fff;
+      opacity: 1;
+      font-size: 14px;
+      font-weight: 700;
+      margin-left: 5px;
+  }
+}
+
+#toTop {
+  position: fixed;
+  bottom: 2.7rem;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+  z-index: 9999;
+  bottom: 45px;
+}
+
+.top-btn {
+  background: cornflowerblue;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: #002e5b;
+  font-size: 20px;
+  display: inline-block;
+  text-align: center;
+  line-height: 45px;
+  transition: 0.5s;
+}
+
+.top-btn:hover {
+  background-image: linear-gradient(to right, #070100e7, #070300bb);
+  box-shadow: 0 0 15px black;
+  color: #fff;
 }

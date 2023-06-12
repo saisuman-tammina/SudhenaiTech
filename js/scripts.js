@@ -48,12 +48,25 @@ $(document).ready(function(){
 
 const navbar = document.querySelector('.nav-fixed');
 window.onscroll = () => {
-    if (window.scrollY > 350) {
+    if (window.scrollY > 0) {
         navbar.classList.add('nav-active');
     } else {
         navbar.classList.remove('nav-active');
     }
 };
+
+$('body').append('<div id="toTop" class="top-btn"><img src="assets/images/arrow-1.svg" style="rotate: -90deg; width: 14px;height: 14px;position: relative;top: -5px;"></div>');
+    $(window).on('scroll',function () {
+        if ($(this).scrollTop() != 0) {
+            $('#toTop').fadeIn();
+        } else {
+            $('#toTop').fadeOut();
+        }
+    }); 
+    $('#toTop').on('click',function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    }); 
 
 // const element = document.querySelector('.top-colour');
 // element.classList.add('animate__animated', 'animate__flip', 'animate__infinite');
