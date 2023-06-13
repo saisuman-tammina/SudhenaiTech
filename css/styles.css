@@ -10855,7 +10855,6 @@ header{
   width: 100%;
   z-index: 99;
   transition: background-color 0.3s ease-in-out;
-  height: 90px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 }
@@ -10921,16 +10920,16 @@ header{
     font-size: 18px !important;
     /* display: table-caption; */
     position: relative;
-    top: -100px;
-    left: -33px;
+    top: -150px;
+    /* left: -33px; */
 }
   .header-content p{
     display: none;
   }
   .header-content h5{
     position: relative !important;
-    top: -98px;
-    left: -33px;
+    top: -120px;
+    /* left: -33px; */
     font-size: 15px;
   }
 }
@@ -11310,7 +11309,7 @@ color: white;
   width: 40px;
   /* background: #3498db; */
   position: fixed;
-  right: 0;
+  right: 15px;
   z-index: 9999;
   display: flex;
   align-items: center;
@@ -11350,7 +11349,7 @@ color: white;
 #toTop {
   position: fixed;
   bottom: 2.7rem;
-  right: 0;
+  right: 15px;
   cursor: pointer;
   display: none;
   z-index: 9999;
