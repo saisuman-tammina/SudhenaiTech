@@ -10855,6 +10855,9 @@ header{
   width: 100%;
   z-index: 99;
   transition: background-color 0.3s ease-in-out;
+  height: 90px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
 }
 
 /* header.nav-fixed {
@@ -11372,4 +11375,41 @@ color: white;
   background-image: linear-gradient(to right, #070100e7, #070300bb);
   box-shadow: 0 0 15px black;
   color: #fff;
+}
+
+/* contact page styles starts here */
+
+@media (min-width:1200px){
+  .contact-img img{
+    width: 745px;
+  }
+}
+
+@media (min-width:992px) and (max-width:1199px){
+  .contact-img img{
+    width: 545px;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px){
+  .contact-img img{
+    width: 345px;
+  }
+}
+
+@media (max-width:767px){
+  .contact-img img{
+    width: 295px;
+  }
+}
+
+.social-contact{
+  background-color: #000084;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+h5{
+  color: #000084;
+  font-weight: 700;
 }
