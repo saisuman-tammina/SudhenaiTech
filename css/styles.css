@@ -11452,3 +11452,18 @@ h5{
   color: #000084;
   font-weight: 700;
 }
+/* about page */
+
+.heading-1{
+  background-image: url("/assets/images/section-1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  height: 500px;
+  margin-top: 20px;
+}
+.section-3{
+  background-color: #F1F1F1;
+}
