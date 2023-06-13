@@ -10914,6 +10914,45 @@ header{
   }
 }
 
+.header-content h5{
+  border: 1px solid white;
+  padding: 10px;
+  width: 220px;
+  border-radius: 10px;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+
+.header-content h5:hover{
+  background-color: white !important;
+  color: black !important;
+}
+
+@-webkit-keyframes glowing {
+  0% { background-color: transparent; -webkit-box-shadow: 0 0 3px var(--bs-white); }
+  50% { background-color: transparent; -webkit-box-shadow: 0 0 40px var(--bs-white); }
+  100% { background-color: transparent; -webkit-box-shadow: 0 0 3px (--bs-white); }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: transparent; -moz-box-shadow: 0 0 3px var(--bs-white); }
+  50% { background-color: transparent; -moz-box-shadow: 0 0 40px var(--bs-white); }
+  100% { background-color: transparent; -moz-box-shadow: 0 0 3px var(--bs-white); }
+}
+
+@-o-keyframes glowing {
+  0% { background-color:transparent; box-shadow: 0 0 3px var(--bs-white); }
+  50% { background-color: transparent; box-shadow: 0 0 40px var(--bs-white); }
+  100% { background-color: transparent; box-shadow: 0 0 3px var(--bs-white); }
+}
+
+@keyframes glowing {
+  0% { background-color: transparent; box-shadow: 0 0 3px var(--bs-white); }
+  50% { background-color: transparent; box-shadow: 0 0 40px var(--bs-white); }
+  100% { background-color: transparent; box-shadow: 0 0 3px var(--bs-white); }
+}
 
 @media (max-width:480px){
   .header-content h1 {
@@ -10978,6 +11017,7 @@ header{
   color: #000084 !important;
   border-bottom: 3px solid #000084;
   height: 40px;
+  transition: 0.3s;
 }
 
 @media (max-width:767px){
