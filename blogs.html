@@ -11,7 +11,9 @@
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet"/>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
     </head>
     <body class="d-flex flex-column">
         <main class="flex-shrink-0">
@@ -47,7 +49,7 @@
                                         <li class="nav-item d-flex justify-content-center"><a class="nav-link" href="about.html">Services</a></li>
                                         <li class="nav-item d-flex justify-content-center"><a class="nav-link" href="contact.html">Solutions</a></li>
                                         <li class="nav-item d-flex justify-content-center"><a class="nav-link" href="pricing.html">Our Works</a></li>
-                                        <li class="nav-item d-flex justify-content-center"><a class="nav-link" href="blog-home.html">Blogs</a></li>
+                                        <li class="nav-item d-flex justify-content-center"><a class="nav-link" href="blogs.html">Blogs</a></li>
                                         <li class="nav-item d-flex justify-content-center"><a class="nav-link" href="faq.html">Careers</a></li>
                                         <li class="nav-item d-flex justify-content-center"><a class="nav-link active" href="contact.html">Contact us</a></li>
                                     </ul>
@@ -58,22 +60,18 @@
                 </div>
             </header>
             <!-- Page content-->
-            <div class="container-fluid mt-5">
-                <div class="container p-2">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-5 col-sm-12">
-                            <h3>CONTACT US</h3>
+            <div class="container-fluid blog-bg">
+                <div class="container py-5">
+                    <div class="row align-items-center">
+                        <div class="col-md-5">
+                            <h3>Blogs</h3>
                             <p>
                                 Lorem Ipsum has been the industry's standard
                                 when an unknown printer took make a type specimen book.
                             </p>
-                            <h5>Enquiry<a href=""><img src="./assets/images/arrowcircleright.png" alt=""></a> </h5>
                         </div>
-                        <div class="col-md-7 col-sm-12 mt-3 contact-img d-flex justify-content-center">
-                            <img src="assets/images/contact-bg.jpg" alt="">
-                        </div>
+                        <div class="offset-md-7"></div>
                     </div>
-
                 </div>
             </div>
             <div class="container-fluid mt-5">
@@ -85,14 +83,14 @@
                                 Lorem Ipsum has been the industry's standard
                                 when an unknown printer took make a type specimen book.
                             </p>
-                            <div class="card mt-4 d-flex align-items-center justify-content-center w-50">
+                            <div class="card mt-4 d-flex align-items-center justify-content-center address-content w-50">
                                <p><i class="bi bi-envelope"></i> hr@sudenaitech.com</p>
                             </div>
                             <h4 class="mt-4">Have a Coffee with us!</h4>
                             <button type="button" class="btn btn-primary mt-4">
                                  <span class="badge badge-light">USA</span>
                             </button>
-                            <div class="card d-flex align-items-center justify-content-center w-75">
+                            <div class="card d-flex align-items-center justify-content-center address-content w-75">
                                 <p>
                                     4460 Brookfield Corporate Dr,Suite N, Chantilly <br> VA 20151,USA. <br> Contact: +1 5716852150 <br>
                                 </p>
@@ -136,6 +134,10 @@
 
             </div>
         </main>
+        <div class="whats-app">
+            <img width="30" height="30" src="assets/images/whatsapp.svg">
+            <a href="">+1 703-349-1074 </a>
+        </div>
         <!-- Footer-->
         <footer class="bg-dark py-4 mt-auto">
             <div class="container px-5">
