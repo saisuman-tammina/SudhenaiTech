@@ -11422,8 +11422,30 @@ h5{
   display: flex;
   align-items: center;
   height: 500px;
-  margin-top: 20px;
 }
 .section-3{
   background-color: #F1F1F1;
+}
+/* about end */
+
+/* services page */
+.heading-2{
+  background-image: url("/assets/images/services-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  height: 500px;
+}
+
+.carousel-control-prev-icon1{
+  background-image: url("../assets/images/arrowcircleright.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel-control-prev-icon12{
+  background-image: url("../assets/images/arrowcirleleft.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
