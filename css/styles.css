@@ -10972,6 +10972,18 @@ header{
   padding: 8px 45px;
 }
 
+.navbar-nav li a:hover{
+  color: #000084 !important;
+  border-bottom: 3px solid #000084;
+  height: 40px;
+}
+
+@media (max-width:767px){
+  .navbar-nav li a{
+    border-bottom: 2px solid #fff;
+  }
+}
+
 @media (max-width:991px){
   nav ul{
     background-color: #0074BE;
