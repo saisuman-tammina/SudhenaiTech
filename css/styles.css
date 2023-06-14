@@ -10887,6 +10887,7 @@ header{
 }
 .multi-column-dropdown li a {
 	display: block;
+  /* visibility: hidden; */
 	clear: both;
 	line-height: 1.428571429;
 	color: #333;
@@ -10899,7 +10900,7 @@ header{
 	text-decoration: none;
 	color: #262626;
 }
- 
+
 @media (max-width: 767px) {
 	.dropdown-menu.multi-column {
 		min-width: 240px !important;
@@ -11089,6 +11090,12 @@ header{
   height: 40px;
   transition: 0.3s;
 }
+
+/* .mega-menu{
+  position: absolute;
+  top: 0;
+} */
+
 
 .selected{
   color: #000084 !important;
@@ -11608,10 +11615,6 @@ h5{
 }
 
 /* page 404 styles from here */
-.error-content span{
-  font-size: 8rem;
-  font-family: cursive;
-}
 
 .error-content button{
   background-color: #000084;
@@ -11624,6 +11627,39 @@ h5{
 .btn:hover{
   border: 1px solid #000;
 }
+
+.page_404{ padding:40px 0; background:#fff; font-family: cursive;
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ 
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+  .four_zero_four_bg h3{
+       font-size:80px;
+       }
+       
+       .link_404{      
+          color: #fff!important;
+          padding: 10px 20px;
+          background: #000084;
+          /* margin: 20px 0; */
+          border-radius: 25px;
+          border: none;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          display: inline-block;}
+        /* .contant_box_404{ margin-top:-50px;} */
+
 @media(min-width:1200px){
   .industries-img{
        width: 880px !important;
