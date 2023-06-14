@@ -11606,3 +11606,8 @@ h5{
 .dropdown-menu{
   left: unset !important;
 }
+@media(min-width:1200px){
+  .industries-img{
+       width: 880px !important;
+  }
+}
