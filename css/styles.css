@@ -11629,3 +11629,24 @@ h5{
        width: 880px !important;
   }
 }
+.industries-margin{
+  margin: 150px 0px;
+}
+.industries-margin button{
+    border-radius: 44px;
+    border: 1px solid #152c53;
+    background: #152c53;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+@media (max-width:767px){
+  .industries-margin img{
+      width: 80% !important;
+  }
+}
+@media (min-width:768px){
+  .industries-margin img{
+    width: 200px !important;
+  }
+}
