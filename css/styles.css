@@ -11606,3 +11606,21 @@ h5{
 .dropdown-menu{
   left: unset !important;
 }
+
+/* page 404 styles from here */
+.error-content span{
+  font-size: 8rem;
+  font-family: cursive;
+}
+
+.error-content button{
+  background-color: #000084;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-weight:600;
+}
+
+.btn:hover{
+  border: 1px solid #000;
+}
