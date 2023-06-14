@@ -11624,3 +11624,8 @@ h5{
 .btn:hover{
   border: 1px solid #000;
 }
+@media(min-width:1200px){
+  .industries-img{
+       width: 880px !important;
+  }
+}
