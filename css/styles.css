@@ -11055,6 +11055,13 @@ header{
   transition: 0.3s;
 }
 
+.active{
+  color: #000084 !important;
+  border-bottom: 3px solid #000084;
+  height: 40px;
+  transition: 0.3s;
+}
+
 @media (max-width:767px){
   .navbar-nav li a{
     border-bottom: 2px solid #fff;
@@ -11555,9 +11562,9 @@ h5{
 }
 
 .address-content{
-  background-color: #F3F3F3;
-  border: none;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #F3F3F3 !important;
+  border: none !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
 }
 .dropdown-menu{
   left: unset !important;
