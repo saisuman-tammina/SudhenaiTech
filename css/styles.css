@@ -491,6 +491,7 @@ progress {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+  /* color: white */
 }
 
 .display-1 {
@@ -10959,78 +10960,52 @@ header{
   }
 }
 
-.header-content button{
-  border: 1px solid white;
-  padding: 10px;
-  width: 220px;
-  border-radius: 10px;
-}
-
-.header-content button:hover{
-  background-color: white !important;
-  color: white !important;
-}
-
-.glow-on-hover {
-  width: 220px;
-  height: 50px;
-  border: none;
-  outline: none;
-  color: #fff;
-  background: #111;
-  cursor: pointer;
+.request {
+  border: 2px solid;
+  padding: 7px 12px;
   position: relative;
-  z-index: 0;
-  border-radius: 10px;
+  display: inline-block;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-decoration: none;
 }
 
-.glow-on-hover:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+.request:before {
+  content: "";
   position: absolute;
-  top: -2px;
-  left:-2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity .3s ease-in-out;
-  border-radius: 10px;
-}
-
-.glow-on-hover:active {
-  color: #000
-}
-
-.glow-on-hover:active:after {
-  background: transparent;
-}
-
-.glow-on-hover:hover:before {
-  opacity: 1;
-}
-
-.glow-on-hover:after {
-  z-index: -1;
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #111;
+  bottom: 0;
   left: 0;
-  top: 0;
-  border-radius: 10px;
+  width: 0%;
+  height: 100%;
+  background: #4aceb5;;
+  transition: all 0.9s;
+  border-radius: 10rem;
+  z-index: -1;
+  animation: gani 0.9s infinite;
+}
+.request:hover {
+  color: #fff;
+}
+.request:hover:before {
+  width: 100%;
+  animation: gani 0s 1;
 }
 
-@keyframes glowing {
-  0% { background-position: 0 0; }
-  50% { background-position: 400% 0; }
-  100% { background-position: 0 0; }
+@keyframes gani {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 220px;
+  }
 }
-
 
 @media (max-width:480px){
   .header-content h1 {
