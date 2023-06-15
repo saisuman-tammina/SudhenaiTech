@@ -10899,11 +10899,20 @@ header{
 	color: #262626;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 	.dropdown-menu.multi-column {
 		min-width: 240px !important;
 		overflow-x: hidden;
 	}
+}
+
+@media (max-width:991px){
+  .menu-button{
+   text-align: center;
+  }
+  .industries ul{
+    text-align: center !important;
+  }
 }
 
 @media (min-width:768px) and (max-width:991px){
@@ -11110,7 +11119,7 @@ header{
 
 @media (max-width:991px){
   nav ul{
-    background-color: #0074BE;
+    /* background-color: #0074BE; */
     border-radius: 5px;
     margin-top: 10px;
   }
@@ -11608,10 +11617,11 @@ h5{
   border: none !important;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
 }
-.dropdown-menu{
-  left: unset !important;
+@media (min-width:992px){
+  .dropdown-menu{
+    left: -280px !important;
+  }
 }
-
 /* page 404 styles from here */
 
 .error-content button{
