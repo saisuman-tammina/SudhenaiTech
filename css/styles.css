@@ -11533,6 +11533,9 @@ color: white;
     width: 295px;
   }
 }
+.dropdown:hover .dropdown-menu{
+  display: block;
+}
 
 .social-contact{
   background-color: #000084;
