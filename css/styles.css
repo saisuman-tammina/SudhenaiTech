@@ -10887,14 +10887,12 @@ header{
 }
 .multi-column-dropdown li a {
 	display: block;
-  /* visibility: hidden; */
 	clear: both;
 	line-height: 1.428571429;
 	color: #333;
 	white-space: normal;
   text-decoration: none;
-  font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
 }
 .multi-column-dropdown li a:hover {
 	text-decoration: none;
