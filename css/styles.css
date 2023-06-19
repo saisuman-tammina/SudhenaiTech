@@ -10940,7 +10940,7 @@ header{
 
 
 .main-headers{
-  background-image: url("/assets/images/landingimg.svg");
+  background-image: url("/images/landingimg.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11201,7 +11201,7 @@ header{
 }
 
 .blog-section{
-  background-image: url("../assets/images/blogbg1.jpg");
+  background-image: url("/images/blogbg1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -11225,7 +11225,7 @@ header{
   border-radius: 15px;
 }
 .our-clients{
-  background-image: url("../assets/images/claints.jpg");
+  background-image: url("/images/claints.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -11259,7 +11259,7 @@ header{
 }
 
 .testimonial-content{
-  background-image: url("../assets/images/businessimg.svg");
+  background-image: url("/images/businessimg.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11330,7 +11330,7 @@ h3{
   color: #000084;
 }
 .email-bg{
-  background-image: url("../assets/images/emailbg.svg");
+  background-image: url("/images/emailbg.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11527,7 +11527,7 @@ h5{
 /* about page */
 
 .heading-1{
-  background-image: url("../assets/images/section-1.svg");
+  background-image: url("/images/section-1.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11547,7 +11547,7 @@ h5{
 
 /* services page */
 .heading-2{
-  background-image: url("../assets/images/services-bg.png");
+  background-image: url("/images/services-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11572,12 +11572,12 @@ h5{
 }
 
 .carousel-control-prev-icon1{
-  background-image: url("../assets/images/arrowcircleright.svg");
+  background-image: url("/images/arrowcircleright.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .carousel-control-prev-icon12{
-  background-image: url("../assets/images/arrowcirleleft.svg");
+  background-image: url("/images/arrowcirleleft.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -11585,7 +11585,7 @@ h5{
 /* blog page styles starts here */
 
 .blog-bg{
-  background-image: url("../assets/images/blog-img.svg");
+  background-image: url("/images/blog-img.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
