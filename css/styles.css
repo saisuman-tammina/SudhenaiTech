@@ -10940,7 +10940,7 @@ header{
 
 
 .main-headers{
-  background-image: url("../assets/images/landingimg.png");
+  background-image: url("../assets/images/mainheadersbg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10960,51 +10960,8 @@ header{
   }
 }
 
-.request {
-  border: 2px solid;
-  padding: 7px 12px;
-  position: relative;
-  display: inline-block;
-  border-radius: 10rem;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1rem;
-  letter-spacing: 0.15rem;
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  text-decoration: none;
-}
-
-.request:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background: #4aceb5;;
-  transition: all 0.9s;
-  border-radius: 10rem;
-  z-index: -1;
-  animation: gani 0.9s infinite;
-}
-.request:hover {
-  color: #fff;
-}
-.request:hover:before {
-  width: 100%;
-  animation: gani 0s 1;
-}
-
-@keyframes gani {
-  0% {
-    width: 0px;
-  }
-  100% {
-    width: 220px;
-  }
+p{
+  line-height: 1.7;
 }
 
 @media (max-width:480px){
@@ -11067,8 +11024,8 @@ header{
 }
 
 .navbar-nav li a:hover{
-  color: #000084 !important;
-  border-bottom: 3px solid #000084;
+  /* color: gray !important; */
+  border-bottom: 2px solid gray;
   height: 40px;
   transition: 0.3s;
   width: auto;
@@ -11079,10 +11036,17 @@ header{
   top: 0;
 } */
 
+/* .read-more{
+  border: 1px solid #000084;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #000084;
+} */
 
 .selected{
   color: #000084 !important;
-  border-bottom: 3px solid #000084;
+  border-bottom: 3px solid gray;
   height: 40px;
   transition: 0.3s;
 }
@@ -11201,7 +11165,7 @@ header{
 }
 
 .blog-section{
-  background-image: url("../assets/images/blogbg1.jpg");
+  background-image: url("../assets/images/blogsnewbg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -11259,7 +11223,7 @@ header{
 }
 
 .testimonial-content{
-  background-image: url("../assets/images/businessimg.png");
+  background-image: url("../assets/images/test.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11432,13 +11396,13 @@ color: white;
   border-radius: 5px;
 }
 
-.whats-app a{
+/* .whats-app a{
   visibility: hidden;
   opacity: 0;
   text-decoration: none !important;
-}
+} */
 
-.whats-app:hover{
+/* .whats-app:hover{
   width: 220px;
   transition: all .25s ease;
   text-decoration: none !important;
@@ -11451,7 +11415,7 @@ color: white;
       font-weight: 700;
       margin-left: 5px;
   }
-}
+} */
 
 #toTop {
   position: fixed;
@@ -11464,8 +11428,8 @@ color: white;
 }
 
 .top-btn {
-  background: cornflowerblue;
-  color: #ffffff;
+  background: coral;
+  color: #fff;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -11478,7 +11442,7 @@ color: white;
 }
 
 .top-btn:hover {
-  background-image: linear-gradient(to right, #070100e7, #070300bb);
+  /* background-image: linear-gradient(to right, #070100e7, #070300bb); */
   box-shadow: 0 0 15px black;
   color: #fff;
 }
