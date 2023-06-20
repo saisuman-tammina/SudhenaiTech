@@ -11172,7 +11172,7 @@ p{
 
 }
 .blog-slider{
-  width: 80%;
+  width: 85%;
 }
 .blog-bg-content{
   background-color: #000084;
@@ -11638,6 +11638,14 @@ h5{
        width: 880px !important;
   }
 }
+
+@media (max-width:480px){
+  .industries-row{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 .industries-margin{
   margin: 150px 0px;
 }
