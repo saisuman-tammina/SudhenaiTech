@@ -10940,7 +10940,7 @@ header{
 
 
 .main-headers{
-  background-image: url("/assets/images/landingimg.png");
+  background-image: url("../assets/images/landingimg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
