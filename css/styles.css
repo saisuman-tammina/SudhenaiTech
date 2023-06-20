@@ -11025,7 +11025,7 @@ p{
 
 .navbar-nav li a:hover{
   /* color: gray !important; */
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid gray;
   height: 40px;
   transition: 0.3s;
   width: auto;
@@ -11672,12 +11672,12 @@ h5{
     position: relative;
   }
 }
-@media (max-width:991px){
+/* @media (max-width:991px){
   .navbar-nav li a:hover{
     width: 200px;
     margin: auto;
   }
-}
+} */
 @media (min-width:992px){
   .dropdown-menu.show {
     display: flex !important;
