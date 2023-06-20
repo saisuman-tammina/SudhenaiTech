@@ -11508,7 +11508,7 @@ h5{
 
 /* services page */
 .heading-2{
-  background-image: url("../assets/images/services-bg.png");
+  background-image: url("../assets/images/ser.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11546,7 +11546,7 @@ h5{
 /* blog page styles starts here */
 
 .blog-bg{
-  background-image: url("../assets/images/blog-img.png");
+  background-image: url("../assets/images/blo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -11698,11 +11698,24 @@ h5{
   /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
 }
 .dropdown-menu li .dropdown-item {
-  color: gray;
+  color: black;
   font-size: 1em;
   padding: 0.5em 1em;
 }
 .dropdown-menu ul {
   list-style: none;
   padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: 600px;
+  background-color: pink;
+}
+
+#section2 {
+  height: 600px;
+  /* background-color: yellow; */
 }
