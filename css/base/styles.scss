@@ -32,11 +32,19 @@ body {
 }
 
 .menu-items {
-  .menu-list a {
-    font-weight: 500;
+  li {
+    padding: 0px 9px;
+    a {
+      font-size: 18px;
+      font-weight: 400;
+    }
   }
+
 }
 
+.navbar-custom{
+  height: 100px;
+}
 
 .main-headers {
   background-image: url(/assets/images/sudenailanding.svg);
@@ -97,13 +105,115 @@ color: nth($--app-blue-color,3);
   }
 }
 
-
-
-//Common-styles
-.common-container {
-  width: 90%;
-  margin: auto;
+.industrial-card{
+  @include width-height(auto, 360px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: grid;
+  place-content: space-evenly;
+  margin-bottom: 30px;
 }
+
+.industries-offer{
+  .industries-inner{
+    @include grid-item;
+  }
+}
+
+.industries {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 60px;
+  color: nth($--app-blue-color,2);
+}
+.industries-text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.top-colour1 {
+  border-top: 15px solid #636363 !important;
+}
+
+.blog-section{
+  position: relative;
+  margin-top: 50px;
+  &::after{
+    content: '';
+    position: absolute;
+    background-image: url('/assets/images/BLOGS-S.svg');
+    width: 60%;
+    height: 100%;
+    top: -35px;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+  .blog-bg-content {
+    background-color: #000084;
+    padding: 35px 0px 0px 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 85%;
+    margin-right: auto;
+    position: relative;
+    right: 15px;
+    z-index: 9999;
+    .blog-box-content{
+      padding: 0px 120px;
+        .blog-box-text h3{
+          font-weight: 800;
+          font-size: 40px;
+          line-height: 60px;
+          color: nth($--white-color,1);
+        }
+    }
+    .align-carousel{
+      margin-left: 20px;
+    }
+
+  }
+}
+
+.blog-img .video-img {
+  border-radius: 30px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+.card-text{
+  font-weight: 200;
+}
+
+.our-clients{
+  .clients-content{
+    width: 70%;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px
+  }
+}
+
+.common-heading{
+  font-weight: 800;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000084;
+}
+
+.card-text{
+  font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+
+
 
 header {
   width: 100%;
@@ -201,45 +311,31 @@ header {
 }
 
 
-.top-colour {
-  border-top: 15px solid #0074BE !important;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-top-left-radius: 10px !important;
-  border-top-right-radius: 10px !important;
-  transition: transform 0.2s;
-}
 
-.top-colour:hover {
-  /* IE 9 */
-  /* Safari 3-8 */
-  transform: scale(1.1);
-}
 
-.top-colour1 {
-  border-top: 15px solid #636363 !important;
-  border-top-left-radius: 10px !important;
-  border-top-right-radius: 10px !important;
-  transition: transform 0.2s;
-}
+// .top-colour:hover {
+//   /* IE 9 */
+//   /* Safari 3-8 */
+//   transform: scale(1.1);
+// }
 
-.top-colour1:hover {
-  /* IE 9 */
-  /* Safari 3-8 */
-  transform: scale(1.1);
-}
+
+
+// .top-colour1:hover {
+//   /* IE 9 */
+//   /* Safari 3-8 */
+//   transform: scale(1.1);
+// }
 
 .top-colour2 {
   border-top: 15px solid #0074BE !important;
-  border-top-left-radius: 10px !important;
-  border-top-right-radius: 10px !important;
-  transition: transform 0.2s;
 }
 
-.top-colour2:hover {
-  /* IE 9 */
-  /* Safari 3-8 */
-  transform: scale(1.1);
-}
+// .top-colour2:hover {
+//   /* IE 9 */
+//   /* Safari 3-8 */
+//   transform: scale(1.1);
+// }
 
 .top-colour3 {
   border-top: 15px solid #000084 !important;
@@ -248,39 +344,19 @@ header {
   transition: transform 0.2s;
 }
 
-.top-colour3:hover {
-  /* IE 9 */
-  /* Safari 3-8 */
-  transform: scale(1.1);
-}
+// .top-colour3:hover {
+//   /* IE 9 */
+//   /* Safari 3-8 */
+//   transform: scale(1.1);
+// }
 
-.blog-section {
-  background-image: url("/assets/images/blogsnewbg.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
 
-.blog-slider {
-  width: 85%;
-}
 
-.blog-bg-content {
-  background-color: #000084;
-  padding: 20px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  position: relative;
-  left: -15px;
-}
 
-.blog-bg-content h3 {
-  color: white;
-}
 
-.blog-img img {
-  border-radius: 15px;
-}
+
+
+
 
 .our-clients {
   background-image: url("/assets/images/claints.jpg");
@@ -289,9 +365,7 @@ header {
   background-size: cover;
 }
 
-.industries {
-  color: #000084;
-}
+
 
 .content {
   display: none;
@@ -386,11 +460,7 @@ header {
   }
 }
 
-h3 {
-  font-weight: 800 !important;
-  font-size: 40px !important;
-  color: #000084;
-}
+
 
 .email-bg {
   background-image: url("/assets/images/emailbg.png");
@@ -461,10 +531,7 @@ h3 {
   color: white;
 }
 
-.card-title {
-  color: #000084;
-  font-weight: 700;
-}
+
 
 .sticky {
   position: fixed;
@@ -525,11 +592,11 @@ h3 {
   transition: 0.5s;
 }
 
-.top-btn:hover {
-  /* background-image: linear-gradient(to right, #070100e7, #070300bb); */
-  box-shadow: 0 0 15px black;
-  color: #fff;
-}
+// .top-btn:hover {
+//   /* background-image: linear-gradient(to right, #070100e7, #070300bb); */
+//   box-shadow: 0 0 15px black;
+//   color: #fff;
+// }
 
 .social-contact {
   background-color: #000084;

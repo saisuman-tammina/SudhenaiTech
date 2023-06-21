@@ -8,3 +8,8 @@
     width: $width;
     height: $height;
 }
+
+@mixin grid-item{
+    display: grid;
+    place-content: center;
+}
