@@ -54,6 +54,40 @@ body {
   line-height: 24px;
 }
 
+.second-section {
+  background-color: #F3F3F3;
+  padding: 30px 0px;
+}
+.second-section .second-section-text {
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 93px;
+  color: #000084;
+}
+.second-section .second-section-sub {
+  position: relative;
+  top: 28px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #0074BE;
+}
+.second-section .abountUs-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  width: 98%;
+  height: auto;
+  color: #000;
+}
+.second-section .about-features {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #303030;
+  padding-top: 30px;
+}
+
 .common-container {
   width: 90%;
   margin: auto;
@@ -124,11 +158,6 @@ header {
 
 .sticky + .content {
   padding-top: 60px;
-}
-
-.about-us {
-  background-color: #F3F3F3;
-  padding: 30px;
 }
 
 .about-us h1 {
