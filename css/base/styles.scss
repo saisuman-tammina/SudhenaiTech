@@ -1,15 +1,22 @@
+@import '../abstracts/media-queries.scss';
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+@import '../Fonts_Poppins/stylesheet.scss';
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
 /* styles starts from here */
+
+
+body{
+  font-family: "Poppins" !important;
+}
 header {
   width: 100%;
   z-index: 99;
   transition: background-color 0.3s ease-in-out;
+  background-color: nth($--white-color,1);
 }
 
-/* header.nav-fixed {
-  width: 100%;
-  position: fixed;
-  transition: 0.3s ease-in-out;
-} */
 .nav-active {
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
