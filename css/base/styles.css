@@ -181,7 +181,9 @@ body {
 }
 
 .card-text {
-  font-weight: 200;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .our-clients .clients-content {
@@ -202,6 +204,112 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+.testimonial-content {
+  background-image: url("/assets/images/test.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 911px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-content .testimonial-carousel {
+  background-color: #000084 !important;
+  border-radius: 50px !important;
+  width: 90%;
+  height: 625px;
+  display: grid;
+  place-content: center;
+  padding: 0px 50px;
+}
+.testimonial-content .testimonial-carousel .testimonial-text {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial-content .testimonial-carousel .testimonial-text h3 {
+  position: relative;
+  top: 10px;
+}
+.testimonial-content .setup-card {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  height: calc(100% - 75px);
+}
+.testimonial-content .setup-card .card-body {
+  padding: 70px 35px;
+}
+.testimonial-content .setup-card .card-img-top {
+  position: relative;
+}
+.testimonial-content .setup-card .card-img-top img {
+  width: 100%;
+}
+.testimonial-content .setup-card .card-img-top::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #000084;
+  position: absolute;
+  border-radius: 50%;
+  left: 27px;
+  bottom: -50px;
+}
+.testimonial-content .designation-name {
+  font-weight: 800;
+  font-size: 18px;
+  color: #000084;
+  margin-bottom: 0;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  background-color: #000084 !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  opacity: 1 !important;
+  border: 2px solid;
+}
+
+.carousel-control-next {
+  right: -40px !important;
+}
+
+.carousel-control-prev {
+  left: -40px !important;
+}
+
+.accordion-lists {
+  width: 100%;
+  border: 0;
+  background: #D1D1D1;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  height: 100%;
+  text-align: left;
+  padding: 20px 50px;
+}
+
+.show-collapse {
+  width: 90%;
+  margin: 25px auto;
+  padding: 25px 25px;
+  border: 3px dotted #000;
+  border-radius: 20px;
+}
+
+.btn-scbscribe {
+  border-top-right-radius: 0px;
 }
 
 header {
@@ -320,65 +428,9 @@ header {
   text-decoration: none;
 }
 
-.testimonial-content {
-  background-image: url("/assets/images/test.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 150px;
-}
-
-.testimonial-carousel {
-  background-color: #000084 !important;
-  border-radius: 50px !important;
-  padding: 50px;
-}
-
 @media (max-width: 767px) {
   .testimonial-carousel {
     padding: 35px 0;
-  }
-}
-.slider-padding {
-  padding: 25px 145px;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .slider-padding {
-    padding: 25px 35px;
-  }
-}
-@media (max-width: 767px) {
-  .slider-padding {
-    padding: 0;
-  }
-}
-.carousel-control-next {
-  right: -145px !important;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .carousel-control-next {
-    left: 95% !important;
-  }
-}
-@media (max-width: 767px) {
-  .carousel-control-next {
-    display: none !important;
-  }
-}
-.carousel-control-prev {
-  left: -145px !important;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .carousel-control-prev {
-    left: -65px !important;
-  }
-}
-@media (max-width: 767px) {
-  .carousel-control-prev {
-    display: none !important;
   }
 }
 .email-bg {
@@ -628,10 +680,6 @@ h5 {
   font-weight: 600;
 }
 
-.btn:hover {
-  border: 1px solid #000;
-}
-
 .page_404 {
   padding: 40px 0;
   background: #fff;
@@ -711,12 +759,6 @@ h5 {
     position: relative;
   }
 }
-/* @media (max-width:991px){
-  .navbar-nav li a:hover{
-    width: 200px;
-    margin: auto;
-  }
-} */
 @media (min-width: 992px) {
   .dropdown-menu.show {
     display: flex !important;
