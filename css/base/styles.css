@@ -49,12 +49,33 @@ body {
   align-items: center;
   height: 100vh;
 }
+
+@media (max-width: 992px) {
+  .main-headers {
+    height: 76vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-headers {
+    height: auto;
+  }
+}
+
 .main-headers .main-heading .header-content h1 {
   font-weight: 800;
   font-size: 70px;
   line-height: 86px;
   color: #fff;
 }
+
+@media (max-width: 576px) {
+  .main-headers .main-heading .header-content h1 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
+
 .main-headers .main-heading .header-content .captuine-text {
   color: #fff;
   font-weight: 400;
@@ -155,6 +176,13 @@ body {
   right: 15px;
   z-index: 9999;
 }
+
+@media (max-width: 992px) {
+  .blog-section .blog-bg-content {
+    width: auto;
+  }
+}
+
 .blog-section .blog-bg-content .blog-box-content {
   padding: 0px 120px;
 }
@@ -217,46 +245,67 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 911px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .testimonial-content .testimonial-carousel {
   background-color: #000084 !important;
   border-radius: 50px !important;
   width: 90%;
   height: 625px;
+  display: -ms-grid;
   display: grid;
   place-content: center;
   padding: 0px 50px;
 }
+
 .testimonial-content .testimonial-carousel .testimonial-text {
   height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .testimonial-content .testimonial-carousel .testimonial-text h3 {
   position: relative;
   top: 10px;
 }
+
 .testimonial-content .setup-card {
   background-color: #fff;
   border-radius: 10px;
   width: 100%;
   height: calc(100% - 75px);
 }
+
 .testimonial-content .setup-card .card-body {
   padding: 70px 35px;
 }
+
 .testimonial-content .setup-card .card-img-top {
   position: relative;
 }
+
 .testimonial-content .setup-card .card-img-top img {
   width: 100%;
 }
+
 .testimonial-content .setup-card .card-img-top::after {
-  content: "";
+  content: '';
   width: 50px;
   height: 50px;
   background-color: #000084;
@@ -265,6 +314,7 @@ body {
   left: 27px;
   bottom: -50px;
 }
+
 .testimonial-content .designation-name {
   font-weight: 800;
   font-size: 18px;

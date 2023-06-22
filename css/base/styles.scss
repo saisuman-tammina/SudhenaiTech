@@ -54,12 +54,22 @@ body {
   display: flex;
   align-items: center;
   height: 100vh;
+  @include large-device(max-width){
+    height: 76vh;
+  }
+  @include small-device(max-width){
+    height: auto;
+  }
   .main-heading  .header-content{
     h1{
       font-weight: 800;
       font-size: 70px;
       line-height: 86px;
       color: nth($--white-color,1);
+      @include small-device(max-width){
+        font-size: 22px;
+        line-height: 25px;
+      }
     }
     .captuine-text{
       color: nth($--white-color,1);
@@ -161,6 +171,9 @@ color: nth($--app-blue-color,3);
     position: relative;
     right: 15px;
     z-index: 9999;
+    @include large-device(max-width){
+      width: auto;
+    }
     .blog-box-content{
       padding: 0px 120px;
       @include large-device(max-width){
