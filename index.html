@@ -221,7 +221,8 @@
                     </div>
                     </div>
                 </div>
-                <div class="row mb-4">
+                <div class="hide-content">
+                <div class="row">
                     <div class="col-md-3 mb-2 content">
                         <div class="industrial-card top-colour2">
                             <div class="card-body p-4">
@@ -279,7 +280,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mb-4">
+                <div class="row">
                     <div class="col-md-3 mb-sm-3 content">
                         <div class="industrial-card top-colour1">
                             <div class="card-body p-4">
@@ -337,7 +338,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mb-4">
+                <div class="row">
                     <div class="col-md-3 mb-sm-3 content">
                         <div class="industrial-card top-colour2">
                             <div class="card-body p-4">
@@ -395,7 +396,11 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" id="loadMore" class="animate__animated animate__heartBeat animate__infinite">Load More</a>
+                <div class="plus-btn">
+                    <a href="#" id="loadMore" class="animate__animated animate__heartBeat animate__infinite">Load More</a>
+                </div>
+
+            </div>
             </div>
             <!-- Blog preview section-->
             <section class="container-fluid  blog-section">
@@ -679,10 +684,10 @@
                     <h3 class="text-center common-heading mb-0">Enter Your Email</h3>
                     <p class="text-center text-white">Subscribe for exclusive Bonuses, Free Tips and News.</p>
                     <div class="d-flex justify-content-center mb-4">
-                        <div class="form-outline me-3" style="width: 25rem">
-                            <input type="text" id="form1" class="form-control" placeholder="Email" />
+                        <div class="form-outline me-3 w-100">
+                            <input type="text" id="form1" class="form-control input-email" placeholder="Email" />
                         </div>
-                        <button type="button" class="btn btn-primary fw-bold btn-scbscribe">Subscribe</button>
+                        <button type="button" class="btn-scbscribe">Subscribe</button>
                     </div>
                 </div>
             </section>
@@ -695,64 +700,76 @@
                         <div class="col-md-3">
                             <ul>
                                 <a class="footer-heading" href="">Industries</a>
-                                <li class="mt-2"><a href=""><i class="bi bi-chevron-right text-white"></i>Aerospace</a></li>
-                                <li><a href=""><i class="bi bi-chevron-right text-white"></i>Automotive </a></li>
-                                <li><a href=""><i class="bi bi-chevron-right text-white"></i>Banking and Finance</a></li>
-                                <li><a href=""><i class="bi bi-chevron-right text-white"></i>Big Data</a></li>
-                                <li><a href=""><i class="bi bi-chevron-right text-white"></i>Creative</a></li>
-                                <li><a href=""><i class="bi bi-chevron-right text-white"></i>IT</a></li>
-                                <li><a href=""><i class="bi bi-chevron-right text-white"></i>Pharma</a></li>
+                                <div class="mt-4 footer-list">
+                                    <li class="mt-2"><a href=""><i class="bi bi-chevron-right text-white pt-4"></i>Aerospace</a></li>
+                                    <li><a href=""><i class="bi bi-chevron-right text-white"></i>Automotive </a></li>
+                                    <li><a href=""><i class="bi bi-chevron-right text-white"></i>Banking and Finance</a></li>
+                                    <li><a href=""><i class="bi bi-chevron-right text-white"></i>Big Data</a></li>
+                                    <li><a href=""><i class="bi bi-chevron-right text-white"></i>Creative</a></li>
+                                    <li><a href=""><i class="bi bi-chevron-right text-white"></i>IT</a></li>
+                                    <li><a href=""><i class="bi bi-chevron-right text-white"></i>Pharma</a></li>
+                                </div>
+                          
                             </ul>
                         </div>
                         <div class="col-md-3 mt-4 pt-2">
                             <ul>
-                                <li><a href=""><i class="bi bi-chevron-right text-white"></i>Cybersecurity</a></li>
-                                <li><a href=""><i class="bi bi-chevron-right text-white"></i>Energy, Oil & Gas </a></li>
-                                <li><a href=""><i class="bi bi-chevron-right text-white"></i>Engineering</a></li>
-                                <li><a href=""><i class="bi bi-chevron-right text-white"></i>Government</a></li>
-                                <li><a href=""><i class="bi bi-chevron-right text-white"></i>Healthcare</a></li>
-                                <li><a href=""><i class="bi bi-chevron-right text-white"></i>Semiconductor </a></li>
-                                <li><a href=""><i class="bi bi-chevron-right text-white"></i>Telecom</a></li>
+                                <div class="mt-4 pt-2 footer-list">
+                                    <li><a href=""><i class="bi bi-chevron-right text-white"></i>Cybersecurity</a></li>
+                                    <li><a href=""><i class="bi bi-chevron-right text-white"></i>Energy, Oil & Gas </a></li>
+                                    <li><a href=""><i class="bi bi-chevron-right text-white"></i>Engineering</a></li>
+                                    <li><a href=""><i class="bi bi-chevron-right text-white"></i>Government</a></li>
+                                    <li><a href=""><i class="bi bi-chevron-right text-white"></i>Healthcare</a></li>
+                                    <li><a href=""><i class="bi bi-chevron-right text-white"></i>Semiconductor </a></li>
+                                    <li><a href=""><i class="bi bi-chevron-right text-white"></i>Telecom</a></li>
+                                </div>
+                            
                             </ul>
                         </div>
                         <div class="col-md-3">
                             <ul>
                                 <a class="footer-heading mb-2" href="">Services</a>
-                                <li class="mt-2"><a href=""><i class="bi bi-chevron-right text-white"></i>Salesforce </a></li>
-                                <li><a href=""><i class="bi bi-chevron-right text-white"></i>Oracle ERP </a></li>
-                                <li><a href=""><i class="bi bi-chevron-right text-white"></i>Staffing </a></li>
-                                <li><a href=""><i class="bi bi-chevron-right text-white"></i>Business Solutions </a></li>
+                                <div class="mt-4 footer-list">
+                                    <li class="mt-2"><a href=""><i class="bi bi-chevron-right text-white"></i>Salesforce </a></li>
+                                    <li><a href=""><i class="bi bi-chevron-right text-white"></i>Oracle ERP </a></li>
+                                    <li><a href=""><i class="bi bi-chevron-right text-white"></i>Staffing </a></li>
+                                    <li><a href=""><i class="bi bi-chevron-right text-white"></i>Business Solutions </a></li>
+                                </div>
+                            
                             </ul>
                         </div>
                         <div class="col-md-3">
                             <a class="footer-heading" href="">CONNECT WITH US</a>
                             <ul class="d-flex flex-row p-0 mt-3">
-                                <li>
-                                    <a href="#" class="fa fa-facebook d-flex align-items-center justify-content-center"></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fa fa-twitter d-flex align-items-center justify-content-center"></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fa fa-youtube d-flex align-items-center justify-content-center"></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fa fa-linkedin d-flex align-items-center justify-content-center"></a>
-                                </li>
-                                <li>
-                                    <a href="#" class="fa fa-instagram d-flex align-items-center justify-content-center"></a>
-                                </li>
+                                <div class="mt-2 d-flex footer-list">
+                                    <li class="pr-3">
+                                        <a href="#" class="fa fa-facebook d-flex align-items-center justify-content-center"></a>
+                                    </li>
+                                    <li class="pr-3">
+                                        <a href="#" class="fa fa-twitter d-flex align-items-center justify-content-center"></a>
+                                    </li>
+                                    <li class="pr-3">
+                                        <a href="#" class="fa fa-youtube d-flex align-items-center justify-content-center"></a>
+                                    </li>
+                                    <li class="pr-3">
+                                        <a href="#" class="fa fa-linkedin d-flex align-items-center justify-content-center"></a>
+                                    </li>
+                                    <li class="pr-3">
+                                        <a href="#" class="fa fa-instagram d-flex align-items-center justify-content-center"></a>
+                                    </li>
+                                </div>
+                         
                             </ul>
                             <div>
-                                <span class="text-white"> <img src="assets/images/office-building.svg" alt=""> &nbsp; SudhenaiTech</span> <br> <br>
-                                <span class="text-white"> <img src="assets/images/place.svg" alt=""> &nbsp; xxxxxxxxxxxx</span> <br> <br>
-                                <span class="text-white"> <img src="assets/images/phone-receiver-silhouette.svg" alt=""> &nbsp; xxxxxxxxxxxx</span>
+                                <div class="text-white"> <img src="assets/images/office-building.svg" alt=""><span class="ml-3"> SudhenaiTech</span></div>
+                                <div class="text-white my-4"> <img src="assets/images/place.svg" alt=""><span class="ml-3">xxxxxxxxxxxx</span></div>
+                                <div class="text-white"> <img src="assets/images/phone-receiver-silhouette.svg" alt=""><span class="ml-3">xxxxxxxxxxxx</span></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container-fluid px-5 bg-dark">
+            <div class="container-fluid px-5  end-footer">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0 text-white">&copy;2023 Sudenaitech. All Rights Reserved</div></div>
                     <div class="col-auto">
