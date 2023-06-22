@@ -247,7 +247,7 @@ line-height: 24px;
     padding: 0px 50px;
     .testimonial-text{
       height: 120px;
-      @include flex-items;
+      @include grid-item;
       h3{
         position: relative;
         top:10px
@@ -458,6 +458,90 @@ left: -40px !important;
   background-color: #000084;
   width: 3px;
   border-radius: 10px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: nth($--app-blue-color,4);
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  position: relative;
+  top: -20px;
+  &.white-dot{
+    background-color: #fff;
+    margin-top: 16px;
+  }
+}
+
+#dot-2 {
+  width: 25px;
+  height: 25px;
+  animation-delay: 150ms;
+}
+
+#dot-3 {
+  width: 20px;
+  height: 20px;
+  animation-delay: 300ms;
+}
+
+#dot-4 {
+  width: 18px;
+  height: 18px;
+  animation-delay: 450ms;
+}
+#dot-7 {
+  width: 15px;
+  height: 15px;
+  animation-delay: 450ms;
+}
+#dot-6 {
+  width: 13px;
+  height: 13px;
+  animation-delay: 450ms;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    scale: 1;
+    filter: blur(0);
+  }
+
+  25% {
+    opacity: 0.75;
+    scale: 0.75;
+    filter: blur(0.25rem);
+  }
+
+  50% {
+    opacity: 0.5;
+    scale: 0.5;
+    filter: blur(0.5rem);
+  }
+
+  75% {
+    opacity: 0.25;
+    scale: 0.25;
+    filter: blur(0.75rem);
+  }
+
+  100% {
+    opacity: 0;
+    scale: 0;
+    filter: blur(1rem);
+  }
 }
 
 
@@ -966,6 +1050,13 @@ h5 {
 @media only screen and (min-width: 992px) {
   .dropdown:hover .dropdown-menu {
     display: flex;
+    top: 75px !important;
+    width: 800px;
+    justify-content: space-around;
+    border-radius: 15px;
+    border: 0;
+    color: #fff;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   }
 
   .dropdown-menu.show {
@@ -990,7 +1081,7 @@ h5 {
 }
 
 .dropdown-menu li .dropdown-item {
-  color: black;
+  color: #fff;
   font-size: 1em;
   padding: 0.5em 1em;
 }
