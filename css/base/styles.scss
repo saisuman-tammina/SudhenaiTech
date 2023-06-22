@@ -313,10 +313,134 @@ left: -40px !important;
   border: 3px dotted #000;
   border-radius: 20px;
 }
-
-.btn-scbscribe{
-  border-top-right-radius: 0px;
+.email-bg {
+  background-image: url("/assets/images/emailbg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  height: 250px;
+  @include grid-item;
 }
+.form-outline input{
+  border-radius: 45px 0px 0px 0px;
+  &::placeholder{
+    color: nth($--app-blue-color,3);
+    font-weight: 500;
+    position: relative;
+    top:0px; 
+    left: 20px
+    }
+}
+.btn-scbscribe{
+  border: 0;
+  background-color: nth($--app-blue-color,2);
+  color: nth($--white-color,1);
+  padding: 0px 30px;
+  border-radius: 0px 0px 45px 0px;
+}
+
+.footer-bg {
+  .footer-heading {
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1.8px solid #fff;
+
+  }
+  .footer-list li{
+    line-height: 30px;
+   }
+  .bi-chevron-right{
+    padding-right: 10px;
+}
+}
+
+.fa {
+  padding: 15px;
+  font-size: 16px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  height: 40px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.end-footer{
+  height: 50px;
+  @include flex-items;
+  background-color: #5bcaff !important;
+}
+
+
+.hide-content{
+  padding: 25px 20px;
+  height: 70vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  .plus-btn{
+    position: sticky;
+    top: 0;
+    right: 0;
+  }
+}
+
+#loadMore {
+  width: 200px;
+  height: 50px;
+  color: #fff;
+ @include flex-items;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: #000084;
+  transition: 0.3s;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+
+
+::-webkit-scrollbar{
+  background-color: #000084;
+  width: 3px;
+  border-radius: 10px;
+}
+
 
 
 
@@ -494,19 +618,7 @@ header {
   display: none;
 }
 
-#loadMore {
-  width: 200px;
-  color: #fff;
-  display: block;
-  text-align: center;
-  margin: 20px auto;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid transparent;
-  background-color: #000084;
-  transition: 0.3s;
-  text-decoration: none;
-}
+
 
 #loadMore:hover {
   color: blue;
@@ -524,13 +636,7 @@ header {
   }
 }
 
-.email-bg {
-  background-image: url("/assets/images/emailbg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 30px;
-}
+
 
 .footer-bg {
   background-color: #000084;
@@ -546,52 +652,9 @@ header {
   list-style: none;
 }
 
-.footer-heading {
-  color: white;
-  font-weight: 700;
-  font-size: 18px;
-  text-transform: uppercase;
-}
 
-.fa {
-  padding: 15px;
-  font-size: 16px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-  height: 30px;
-}
 
-.fa:hover {
-  opacity: 0.7;
-}
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
 
 
 
