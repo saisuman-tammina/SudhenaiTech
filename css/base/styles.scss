@@ -163,6 +163,9 @@ color: nth($--app-blue-color,3);
     z-index: 9999;
     .blog-box-content{
       padding: 0px 120px;
+      @include large-device(max-width){
+        padding: 0px 20px; 
+      }
         .blog-box-text h3{
           font-weight: 800;
           font-size: 40px;
