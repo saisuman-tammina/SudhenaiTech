@@ -484,7 +484,9 @@ left: -40px !important;
   background-color: #0093E9 !important;
   background-image: linear-gradient(331deg, #0093E9 0%, #80D0C7 100%) !important;
   border-radius: 15px !important;
-  box-shadow: #03A9F4 0px 5px, #2196F3 0px 10px, #03A9F4 0px 12px, #03A9F4 0px 15px, #2196F3 0px 19px;
+  @include extralarge-device(min-width){
+    width: 60vw;
+  }
   ul li  a{
     color: #fff;
     position: relative;
@@ -506,7 +508,7 @@ left: -40px !important;
         left: 3px;
         z-index: -1;
         border-radius: 15px;
-        animation: mymenu 3s infinite;
+        animation: mymenu 1s infinite;
 
       }
      }
@@ -538,7 +540,9 @@ left: -40px !important;
     right: 0;
   }
 }
-
+.nav-link:hover{
+  border-bottom: 2px solid #0074BE !important;
+}
 #loadMore {
   width: 200px;
   height: 50px;
@@ -1158,6 +1162,7 @@ h5 {
 @media (min-width: 992px) {
   .dropdown-menu.show {
     display: flex !important;
+    justify-content: space-around;
   }
 }
 

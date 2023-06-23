@@ -515,7 +515,11 @@ body {
   background-color: #0093E9 !important;
   background-image: linear-gradient(331deg, #0093E9 0%, #80D0C7 100%) !important;
   border-radius: 15px !important;
-  box-shadow: #03A9F4 0px 5px, #2196F3 0px 10px, #03A9F4 0px 12px, #03A9F4 0px 15px, #2196F3 0px 19px;
+}
+@media (min-width: 1200px) {
+  .dropdown-menus {
+    width: 60vw;
+  }
 }
 .dropdown-menus ul li a {
   color: #fff;
@@ -542,7 +546,7 @@ body {
   left: 3px;
   z-index: -1;
   border-radius: 15px;
-  animation: mymenu 3s infinite;
+  animation: mymenu 1s infinite;
 }
 
 @keyframes mymenu {
@@ -567,6 +571,10 @@ body {
   position: sticky;
   top: 0;
   right: 0;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid #0074BE !important;
 }
 
 #loadMore {
@@ -1057,6 +1065,7 @@ h5 {
 @media (min-width: 992px) {
   .dropdown-menu.show {
     display: flex !important;
+    justify-content: space-around;
   }
 }
 @media only screen and (min-width: 992px) {
