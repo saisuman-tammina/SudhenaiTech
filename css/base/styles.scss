@@ -50,7 +50,7 @@ body {
 }
 
 .main-headers {
-  background-image: url(/assets/images/sudenailanding.svg);
+  background-image: url(/assets/images/laptop-home.webp);
   background-size: cover, contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -164,7 +164,7 @@ body {
   &::after{
     content: '';
     position: absolute;
-    background-image: url('/assets/images/BLOGS-S.svg');
+    background-image: url('/assets/images/blogs-content-bg.webp');
     width: 60%;
     height: 100%;
     top: -35px;
@@ -244,7 +244,7 @@ line-height: 24px;
 
 .testimonial-content {
   
-  background-image: url("/assets/images/test.jpg");
+  background-image: url("/assets/images/test-bg.webp");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -282,6 +282,9 @@ line-height: 24px;
         content: '';
         width: 50px;
         height: 50px;
+        background-image: url(/assets/images/quote.png);
+        background-repeat: no-repeat;
+        background-position: center;
         background-color: #000084;
         position: absolute;
         border-radius: 50%;
@@ -886,7 +889,7 @@ h5 {
 /* about end */
 /* services page */
 .heading-2 {
-  background-image: url("/assets/images/ser.jpg");
+  background-image: url("/assets/images/service-page.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -927,7 +930,7 @@ h5 {
 
 /* blog page styles starts here */
 .blog-bg {
-  background-image: url("/assets/images/blogspage.svg");
+  background-image: url("/assets/images/blogs-page.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
