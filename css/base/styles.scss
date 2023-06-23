@@ -33,7 +33,10 @@ body {
 
 .menu-items {
   li {
+    padding: 0;
+    @include extralarge-device(min-width){
     padding: 0px 9px;
+    }
     a {
       font-size: 18px;
       font-weight: 400;
@@ -66,6 +69,10 @@ body {
       font-size: 70px;
       line-height: 86px;
       color: nth($--white-color,1);
+      @include large-device(max-width){
+        font-size: 35px;
+        line-height: 35px;
+      }
       @include small-device(max-width){
         font-size: 22px;
         line-height: 25px;
@@ -86,17 +93,21 @@ body {
   background-color: #F3F3F3;
   padding: 30px 0px;
   .second-section-text{
-font-weight: 800;
-font-size: 62px;
-line-height: 93px;
-color: nth($--app-blue-color,3);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 93px;
+    color: nth($--app-blue-color,3);
+    @include medium-device(max-width){
+      line-height: 70px;
+      font-size: 42px;
+    }
   }
   .second-section-sub{
     position: relative;
     top: 28px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 35px;
     color: nth($--app-blue-color,4);
   }
   .abountUs-content{
@@ -421,6 +432,9 @@ left: -40px !important;
   height: 50px;
   @include flex-items;
   background-color: #5bcaff !important;
+  @include small-device(max-width){
+    height: 110px;
+  }
 }
 
 
