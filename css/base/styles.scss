@@ -371,14 +371,23 @@ left: -40px !important;
 }
 
 .footer-bg {
+  .footer-grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    @include large-device(max-width){
+      grid-template-columns: 50% 50%;
+    }
+    @include small-device(max-width){
+      grid-template-columns: 100%;
+    }
+  }
   .footer-heading {
     color: white;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 23px;
     text-transform: uppercase;
     text-decoration: none;
     border-bottom: 1.8px solid #fff;
-
   }
   .footer-list li{
     line-height: 30px;
