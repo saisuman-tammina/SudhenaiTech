@@ -429,26 +429,19 @@ body {
 }
 
 .footer-bg .footer-grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 25% 25% 25%;
-      grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 25% 25% 25% 25%;
 }
-
 @media (max-width: 992px) {
   .footer-bg .footer-grid {
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
   }
 }
-
 @media (max-width: 576px) {
   .footer-bg .footer-grid {
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
+    grid-template-columns: 100%;
   }
 }
-
 .footer-bg .footer-heading {
   color: white;
   font-weight: 700;
@@ -522,6 +515,7 @@ body {
   background-color: #0093E9 !important;
   background-image: linear-gradient(331deg, #0093E9 0%, #80D0C7 100%) !important;
   border-radius: 15px !important;
+  box-shadow: #03A9F4 0px 5px, #2196F3 0px 10px, #03A9F4 0px 12px, #03A9F4 0px 15px, #2196F3 0px 19px;
 }
 .dropdown-menus ul li a {
   color: #fff;
