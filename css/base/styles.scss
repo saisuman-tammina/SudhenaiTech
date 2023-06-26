@@ -316,94 +316,13 @@ line-height: 24px;
         }
       }
     }
-
-    .text-carousel{
-
-      @media (max-width: 768px) {
-        .carousel-inner .carousel-item > div {
-            display: none !important;
-        }
-        .carousel-inner .carousel-item > div:first-child {
-            display: block !important;
-        }
-    }
-
-    .carousel-inner .carousel-item.active,
-    .carousel-inner .carousel-item-next,
-    .carousel-inner .carousel-item-prev {
-        display: flex !important;
-    }
-
-      /* display 3 */
-  @media (min-width: 768px) {
-      
-    .carousel-inner-test .carousel-item-test-right.active,
-    .carousel-inner-test .carousel-item-test-next {
-      transform: translateX(33.333%) !important;
-    }
-    
-    .carousel-inner-test .carousel-item-test-left.active, 
-    .carousel-inner-test .carousel-item-test-prev {
-      transform: translateX(-33.333%) !important;
-    }
-}
-
-.carousel-inner-test .carousel-item-test-right,
-.carousel-inner-test .carousel-item-test-left{ 
-  transform: translateX(0) !important;
-}
-
-    }
-
-  
-
-  
-
   }
 
-
-  .setup-card{
-    background-color: nth($--white-color,1);
-    border-radius: 10px;
-    width: 100%;
-    height: calc(100% - 75px);
-    @include small-device(max-width){
-      width: 300px;
-      margin: auto;
-      max-width: calc(100% - 49%);
-    }
-    @media (max-width:390px){
-      width: 240px;
-    }
-    .card-body{
-      padding: 70px 35px;
-    }
-    .card-img-top{
-      position: relative;
-      img{
-        width: 100%;
-      }
-      &::after{
-        content: '';
-        width: 50px;
-        height: 50px;
-        background-image: url('../../assets/images/quote.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #000084;
-        position: absolute;
-        border-radius: 50%;
-        left: 27px;
-        bottom: -50px;
-       }
-    }
-
-  }
   .designation-name{
-font-weight: 800;
-font-size: 18px;
-color: #000084;
-margin-bottom: 0;
+    font-weight: 800;
+    font-size: 18px;
+    color: #000084;
+    margin-bottom: 0;
 
   }
 
@@ -1308,10 +1227,23 @@ html {
           top: 0;
         }
       }
+      .card-img-top{
+        position: relative;
+        &::after{
+          content: '';
+          width: 50px;
+          height: 50px;
+          background-image: url('../../assets/images/quote.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-color: #000084;
+          position: absolute;
+          border-radius: 50%;
+          left: 27px;
+          bottom: -50px;
+          }
+      }
       .card-image{
-        // position: relative;
-        // height: 150px;
-        // width: 150px;
         .card-img{
           height: 100%;
           width: 100%;

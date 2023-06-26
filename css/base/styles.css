@@ -1201,6 +1201,25 @@ html {
   left: 0;
   top: 0;
 }
+
+.slide-container .slide-content .cards-carousel .card-img-top {
+  position: relative;
+}
+
+.slide-container .slide-content .cards-carousel .card-img-top::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-image: url("../../assets/images/quote.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000084;
+  position: absolute;
+  border-radius: 50%;
+  left: 27px;
+  bottom: -50px;
+}
+
 .slide-container .slide-content .cards-carousel .card-image .card-img {
   height: 100%;
   width: 100%;
