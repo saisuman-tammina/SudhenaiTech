@@ -99,6 +99,19 @@ body {
     line-height: 25px;
   }
 }
+.main-headers .main-heading .header-content .side-content {
+  position: relative;
+}
+.main-headers .main-heading .header-content .side-content h1:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #5cb2de;
+}
+.main-headers .main-heading .header-content .side-content h1:nth-child(2) {
+  position: absolute;
+  top: 0;
+  color: #80D0C7;
+  animation: animate 4s ease-in-out infinite;
+}
 .main-headers .main-heading .header-content .captuine-text {
   color: #fff;
   font-weight: 400;
@@ -106,6 +119,16 @@ body {
   line-height: 24px;
 }
 
+@keyframes animate {
+  0%, 100% {
+    -webkit-clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
 .nav-styles {
   height: 100px;
 }
@@ -340,76 +363,6 @@ body {
   .testimonial-content .testimonial-carousel .testimonial-text h3 {
     font-size: 28px;
   }
-}
-.testimonial-content .testimonial-carousel .text-carousel {
-  /* display 3 */
-}
-@media (max-width: 768px) {
-  .testimonial-content .testimonial-carousel .text-carousel .carousel-inner .carousel-item > div {
-    display: none !important;
-  }
-  .testimonial-content .testimonial-carousel .text-carousel .carousel-inner .carousel-item > div:first-child {
-    display: block !important;
-  }
-}
-.testimonial-content .testimonial-carousel .text-carousel .carousel-inner .carousel-item.active,
-.testimonial-content .testimonial-carousel .text-carousel .carousel-inner .carousel-item-next,
-.testimonial-content .testimonial-carousel .text-carousel .carousel-inner .carousel-item-prev {
-  display: flex !important;
-}
-@media (min-width: 768px) {
-  .testimonial-content .testimonial-carousel .text-carousel .carousel-inner-test .carousel-item-test-right.active,
-  .testimonial-content .testimonial-carousel .text-carousel .carousel-inner-test .carousel-item-test-next {
-    transform: translateX(33.333%) !important;
-  }
-  .testimonial-content .testimonial-carousel .text-carousel .carousel-inner-test .carousel-item-test-left.active,
-  .testimonial-content .testimonial-carousel .text-carousel .carousel-inner-test .carousel-item-test-prev {
-    transform: translateX(-33.333%) !important;
-  }
-}
-.testimonial-content .testimonial-carousel .text-carousel .carousel-inner-test .carousel-item-test-right,
-.testimonial-content .testimonial-carousel .text-carousel .carousel-inner-test .carousel-item-test-left {
-  transform: translateX(0) !important;
-}
-.testimonial-content .setup-card {
-  background-color: #fff;
-  border-radius: 10px;
-  width: 100%;
-  height: calc(100% - 75px);
-}
-@media (max-width: 576px) {
-  .testimonial-content .setup-card {
-    width: 300px;
-    margin: auto;
-    max-width: 51%;
-  }
-}
-@media (max-width: 390px) {
-  .testimonial-content .setup-card {
-    width: 240px;
-  }
-}
-.testimonial-content .setup-card .card-body {
-  padding: 70px 35px;
-}
-.testimonial-content .setup-card .card-img-top {
-  position: relative;
-}
-.testimonial-content .setup-card .card-img-top img {
-  width: 100%;
-}
-.testimonial-content .setup-card .card-img-top::after {
-  content: "";
-  width: 50px;
-  height: 50px;
-  background-image: url("../../assets/images/quote.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #000084;
-  position: absolute;
-  border-radius: 50%;
-  left: 27px;
-  bottom: -50px;
 }
 .testimonial-content .designation-name {
   font-weight: 800;
@@ -1201,13 +1154,11 @@ html {
   left: 0;
   top: 0;
 }
-
 .slide-container .slide-content .cards-carousel .card-img-top {
   position: relative;
 }
-
 .slide-container .slide-content .cards-carousel .card-img-top::after {
-  content: '';
+  content: "";
   width: 50px;
   height: 50px;
   background-image: url("../../assets/images/quote.png");
@@ -1219,7 +1170,6 @@ html {
   left: 27px;
   bottom: -50px;
 }
-
 .slide-container .slide-content .cards-carousel .card-image .card-img {
   height: 100%;
   width: 100%;
