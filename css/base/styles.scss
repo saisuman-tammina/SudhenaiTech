@@ -406,8 +406,11 @@ color: #000084;
 margin-bottom: 0;
 
   }
-}
 
+}
+.test-cards{
+
+    }
 .carousel-control-next , .carousel-control-prev{
   background-color: nth($--app-blue-color,2) !important;
   width: 50px !important;
@@ -1273,9 +1276,13 @@ html {
 .slide-container{
   max-width: 1120px;
   width: 100%;
-  background: #000084;
   padding: 40px 0;
   border-radius: 25px;
+  background: rgb(155 170 231 / 59%);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   .slide-content{
     margin: 0 40px;
     padding: 45px 20px;
@@ -1317,10 +1324,10 @@ html {
     color: nth($--white-color,1);
   }
   .swiper-button-next{
-    right: 0;
+    right: 15px;
   }
   .swiper-button-prev{
-    left: 0;
+    left: 15px;
   }
   .swiper-pagination-bullet{
     background-color: nth($--white-color,1);

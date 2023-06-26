@@ -1162,44 +1162,38 @@ html {
 #section2 {
   height: 600px;
 }
+
+
 .slide-container {
   max-width: 1120px;
   width: 100%;
-  background: #000084;
   padding: 40px 0;
   border-radius: 25px;
+  background: rgba(155, 170, 231, 0.59);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
-
 .slide-container .slide-content {
   margin: 0 40px;
   padding: 45px 20px;
   overflow: hidden;
 }
-
 .slide-container .slide-content .cards-carousel {
   border-radius: 20px;
-  background-color: #ffff;
+  background-color: white;
 }
-
 .slide-container .slide-content .cards-carousel .image-content, .slide-container .slide-content .cards-carousel .card-content {
   padding: 10px 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .slide-container .slide-content .cards-carousel .image-content {
   row-gap: 5px;
   position: relative;
 }
-
 .slide-container .slide-content .cards-carousel .image-content .overlay {
   position: absolute;
   height: 100%;
@@ -1207,27 +1201,21 @@ html {
   left: 0;
   top: 0;
 }
-
 .slide-container .slide-content .cards-carousel .card-image .card-img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .slide-container .swiper-navbtn {
   color: #fff;
 }
-
 .slide-container .swiper-button-next {
-  right: 0;
+  right: 15px;
 }
-
 .slide-container .swiper-button-prev {
-  left: 0;
+  left: 15px;
 }
-
 .slide-container .swiper-pagination-bullet {
   background-color: #fff;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
