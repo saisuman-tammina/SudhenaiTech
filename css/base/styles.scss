@@ -15,8 +15,14 @@ body {
     @include medium-device(max-width){
       justify-content: center;
     }
+  
   }
+
   .contact-details {
+    .mobile-media{
+      width: 40px;
+      height: 40px;
+    }
     color: white;
     @include flex-items;
     @include width-height(100%, 75px);
@@ -32,8 +38,164 @@ body {
     .tel-number {
       margin-left: 30px;
     }
+   
+    .connect-details-contact{
+      @include large-device(max-width){
+        display: none !important;
+      }
+    }
   
   }
+}
+
+.card-contact{
+  position: fixed;
+  bottom: -10px;
+  width: 100%;
+  background-color: #0093E9 !important;
+  background-image: linear-gradient(331deg, #0093E9 0%, #80D0C7 100%) !important;
+  height: 80px;
+  align-items: center;
+  padding: 15px 0px 15px 0px;
+  margin: 10px 0px;
+  @include large-device(min-width){
+    display: none !important;
+  }
+  span {
+    position: absolute;
+    border-radius: 100vmax;
+  }
+  
+  .top {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 7px;
+    background: linear-gradient(
+      90deg,
+      transparent 50%,
+      rgba(255, 49, 49, 0.5),
+      rgb(255, 49, 49)
+    );
+  }
+  
+  .bottom {
+    right: 0;
+    bottom: 0;
+    height: 7px;
+    background: linear-gradient(
+      90deg,
+      rgb(57, 255, 20),
+      rgba(57, 255, 20, 0.5),
+      transparent 50%
+    );
+  }
+  
+  .right {
+    top: 0;
+    right: 0;
+    width: 7px;
+    height: 0;
+    background: linear-gradient(
+      180deg,
+      transparent 30%,
+      rgba(0, 255, 255, 0.5),
+      rgb(0, 255, 255)
+    );
+  }
+  
+  .left {
+    left: 0;
+    bottom: 0;
+    width: 7px;
+    height: 0;
+    background: linear-gradient(
+      180deg,
+      rgb(255, 255, 113),
+      rgba(255, 255, 113, 0.5),
+      transparent 70%
+    );
+  }
+  
+  .top {
+    animation: animateTop 3s ease-in-out infinite;
+  }
+  
+  .bottom {
+    animation: animateBottom 3s ease-in-out infinite;
+  }
+  
+  .right {
+    animation: animateRight 3s ease-in-out infinite;
+  }
+  
+  .left {
+    animation: animateLeft 3s ease-in-out infinite;
+  }
+  
+  @keyframes animateTop {
+    25% {
+      width: 100%;
+      opacity: 1;
+    }
+  
+    30%,
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateBottom {
+    0%,
+    50% {
+      opacity: 0;
+      width: 0;
+    }
+  
+    75% {
+      opacity: 1;
+      width: 100%;
+    }
+  
+    76%,
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateRight {
+    0%,
+    25% {
+      opacity: 0;
+      height: 0;
+    }
+  
+    50% {
+      opacity: 1;
+      height: 100%;
+    }
+  
+    55%,
+    100% {
+      height: 100%;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes animateLeft {
+    0%,
+    75% {
+      opacity: 0;
+      bottom: 0;
+      height: 0;
+    }
+  
+    100% {
+      opacity: 1;
+      height: 100%;
+    }
+  }
+  
 }
 
 .menu-items {
@@ -963,7 +1125,10 @@ header {
   font-size: 16px;
   text-decoration: none !important;
   /* top: 278px; */
-  bottom: 0;
+  bottom: 8%;
+  @include large-device(max-width){
+  bottom: 23%;
+  }
   height: 38px;
   border: 1px solid #25D366;
   border-radius: 5px;
@@ -977,7 +1142,10 @@ header {
   cursor: pointer;
   display: none;
   z-index: 9999;
-  bottom: 45px;
+  @include large-device(max-width){
+    bottom: 190px;
+  }
+  bottom: 0;
 }
 
 .top-btn {
@@ -1249,11 +1417,12 @@ html {
   width: 100%;
   padding: 40px 0;
   border-radius: 25px;
-  background: rgb(155 170 231 / 59%);
+  background: rgba(255, 255, 255, 0.34);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   .slide-content{
     margin: 0 40px;
     padding: 45px 20px;
@@ -1318,4 +1487,8 @@ html {
   }
 }
 
+.align-card-postion{
+  position: relative;
+  top:30px
+}
 
