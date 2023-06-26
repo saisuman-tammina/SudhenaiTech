@@ -52,7 +52,7 @@ body {
 }
 
 .main-headers {
-  background-image: url(/assets/images/laptop-home.webp);
+  background-image: url('../../assets/images/laptop-home.webp');
   background-size: cover, contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -194,7 +194,7 @@ body {
   &::after{
     content: '';
     position: absolute;
-    background-image: url('/assets/images/blogs-content-bg.webp');
+    background-image: url('../../assets/images/blogs-content-bg.webp');
     width: 60%;
     height: 100%;
     top: -35px;
@@ -274,7 +274,7 @@ line-height: 24px;
 
 .testimonial-content {
   
-  background-image: url("/assets/images/test-bg.webp");
+  background-image: url("../../assets/images/test-bg.webp");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -312,7 +312,7 @@ line-height: 24px;
         content: '';
         width: 50px;
         height: 50px;
-        background-image: url(/assets/images/quote.png);
+        background-image: url('../../assets/images/quote.png');
         background-repeat: no-repeat;
         background-position: center;
         background-color: #000084;
@@ -377,7 +377,7 @@ left: -40px !important;
   border-radius: 20px;
 }
 .email-bg {
-  background-image: url("/assets/images/emailbg.png");
+  background-image: url("../../assets/images/emailbg.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -645,7 +645,33 @@ left: -40px !important;
   }
 }
 
+@include medium-device(max-width){
+  .mobile-icons{
+    display: none !important;
+  }
+}
 
+.mobile-carousel{
+ height: 100%;
+ .carousel-caption-mobile{
+  padding: 0 !important;
+  bottom: 0 !important;
+ }
+}
+.carousel-indicators{
+ bottom: -44px !important;
+}
+@include medium-device(min-width){
+  .mobile-carousel{
+    display: none;
+  }
+}
+
+// .carousel-pictures{
+//   width: 75%;
+//   margin: auto;
+//   height: 300px;
+// }
 
 
 
@@ -797,7 +823,7 @@ header {
 
 
 .our-clients {
-  background-image: url("/assets/images/claints.jpg");
+  background-image: url("../../assets/images/claints.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -929,7 +955,7 @@ h5 {
 
 /* about page */
 .heading-1 {
-  background-image: url("/assets/images/section-1.svg");
+  background-image: url("../../assets/images/section-1.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -951,7 +977,7 @@ h5 {
 /* about end */
 /* services page */
 .heading-2 {
-  background-image: url("/assets/images/service-page.webp");
+  background-image: url("../../assets/images/service-page.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -979,20 +1005,20 @@ h5 {
 }
 
 .carousel-control-prev-icon1 {
-  background-image: url("/assets/images/arrowcircleright.svg");
+  background-image: url("../../assets/images/arrowcircleright.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .carousel-control-prev-icon12 {
-  background-image: url("/assets/images/arrowcirleleft.svg");
+  background-image: url("../../assets/images/arrowcirleleft.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /* blog page styles starts here */
 .blog-bg {
-  background-image: url("/assets/images/blogs-page.webp");
+  background-image: url("../../assets/images/blogs-page.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

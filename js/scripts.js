@@ -70,3 +70,4 @@ $('body').append('<div id="toTop" class="top-btn"><img src="assets/images/arrow-
 
 // const element = document.querySelector('.top-colour');
 // element.classList.add('animate__animated', 'animate__flip', 'animate__infinite');
+
