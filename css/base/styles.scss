@@ -279,6 +279,10 @@ line-height: 24px;
   background-repeat: no-repeat;
   background-size: cover;
   height: 911px;
+  @include medium-device(max-width){
+    height: auto;
+    padding: 30px 0px;
+    }
   @include flex-items;
   .testimonial-carousel {
     background-color: #000084 !important;
@@ -286,6 +290,9 @@ line-height: 24px;
     @include width-height(90%, 625px);
     @include grid-item;
     padding: 0px 50px;
+    @include medium-device(max-width){
+    height: auto;
+    }
     .testimonial-text{
       height: 120px;
       @include grid-item;
@@ -300,6 +307,9 @@ line-height: 24px;
     border-radius: 10px;
     width: 100%;
     height: calc(100% - 75px);
+    @include extrasmall-device(max-width){
+      width: 300px;
+    }
     .card-body{
       padding: 70px 35px;
     }
@@ -429,7 +439,9 @@ left: -40px !important;
     padding-right: 10px;
 }
 }
-
+.test-row{
+  flex-wrap: nowrap !important;
+}
 .fa {
   padding: 15px;
   font-size: 16px;

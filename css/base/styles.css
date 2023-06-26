@@ -292,6 +292,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 766px) {
+  .testimonial-content {
+    height: auto;
+    padding: 30px 0px;
+  }
+}
 .testimonial-content .testimonial-carousel {
   background-color: #000084 !important;
   border-radius: 50px !important;
@@ -300,6 +306,11 @@ body {
   display: grid;
   place-content: center;
   padding: 0px 50px;
+}
+@media (max-width: 766px) {
+  .testimonial-content .testimonial-carousel {
+    height: auto;
+  }
 }
 .testimonial-content .testimonial-carousel .testimonial-text {
   height: 120px;
@@ -315,6 +326,11 @@ body {
   border-radius: 10px;
   width: 100%;
   height: calc(100% - 75px);
+}
+@media (max-width: 320px) {
+  .testimonial-content .setup-card {
+    width: 300px;
+  }
 }
 .testimonial-content .setup-card .card-body {
   padding: 70px 35px;
@@ -455,6 +471,10 @@ body {
 }
 .footer-bg .bi-chevron-right {
   padding-right: 10px;
+}
+
+.test-row {
+  flex-wrap: nowrap !important;
 }
 
 .fa {
