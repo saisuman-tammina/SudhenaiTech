@@ -12,6 +12,8 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/base/styles.css" rel="stylesheet" />
+        <!-- swiper link -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="/css/vendor/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
@@ -602,11 +604,9 @@
                 </div>
             </section>
             <section class="container-fluid  testimonial-content">
-                <div class="testimonial-carousel">
+                <div class="slide-container swiper">
                     <div class="testimonial-text">
-                        <div>
-                            <h3 class="text-center text-white common-heading">Testimonials</h3>
-                        </div>
+                        <h3 class="text-center text-white common-heading">Testimonials</h3>
                         <div class="wrapper">
                             <div class="dot white-dot" id="dot-1"></div>
                             <div class="dot white-dot" id="dot-2"></div>
@@ -616,110 +616,91 @@
                             <div class="dot white-dot" id="dot-6"></div>
                           </div>
                     </div>
-                    <div class="row test-row">
-                        <div class="col-sm-12">
-                            <div id="inam" class="carousel slide text-carousel" data-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                         <div class="container">
-                                             <div class="row test-row">
-                                                 <div class="col-sm-12 col-md-4 mb-3 mb-md-0">
-                                                     <div class="setup-card">
-                                                        <div  class="card-img-top">
-                                                            <img src="assets/images/test1.png">
-                                                        </div>
-                                                         <div class="card-body">
-                                                             <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
-                                                             <h4 class="designation-name">Daine</h4>
-                                                             <label>Senior Marketing Mnager</label>
-                                                         </div>
-                                                     </div>
-                                                 </div>
-                                                 <div class="col-sm-12 col-md-4 mb-3 mb-md-0">
-                                                     <div class="setup-card">
-                                                        <div  class="card-img-top">
-                                                            <img src="assets/images/test1.png">
-                                                        </div>
-                                                         <div class="card-body">
-                                                             <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
-                                                             <h4 class="designation-name">Michael</h4>
-                                                             <p>Director</p>
-                                                         </div>
-                                                    </div>
-                                                 </div>
-                                                 <div class="col-sm-12 col-md-4 mb-3 mb-md-0">
-                                                     <div class="setup-card">
-                                                        <div  class="card-img-top">
-                                                            <img src="assets/images/test1.png">
-                                                        </div>
-                                                         <div class="card-body">
-                                                             <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
-                                                             <h4 class="designation-name">Allison</h4>
-                                                             <p>ABC Rentals</p>
-                                                         </div>
-                                                     </div>
-                                                 </div>
-                                             </div>
-                                         </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                         <div class="container">
-                                             <div class="row test-row">
-                                                 <div class="col-sm-12 col-md-4 mb-3 mb-md-0">
-                                                     <div class="setup-card">
-                                                        <div  class="card-img-top">
-                                                            <img src="assets/images/test1.png">
-                                                        </div>
-                                                         <div class="card-body">
-                                                             <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
-                                                             <h4 class="designation-name">Allison</h4>
-                                                             <p>ABC Rentals</p>
-                                                         </div>
-                                                     </div>
-                                                 </div>
-                                                 <div class="col-sm-12 col-md-4 mb-3 mb-md-0">
-                                                     <div class="setup-card">
-                                                        <div  class="card-img-top">
-                                                            <img src="assets/images/test1.png">
-                                                        </div>
-                                                         <div class="card-body">
-                                                             <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
-                                                             <h4 class="designation-name">Michael</h4>
-                                                             <p>Director</p>
-                                                         </div>
-                                                     </div>
-                                                 </div>
-                                                 <div class="col-sm-12 col-md-4 mb-3 mb-md-0">
-                                                     <div class="setup-card">
-                                                        <div  class="card-img-top">
-                                                            <img src="assets/images/test1.png">
-                                                        </div>
-                                                         <div class="card-body">
-                                                             <p class="card-text">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
-                                                             <h4 class="designation-name">Daine</h4>
-                                                             <p>Senior</p>
-                                                         </div>
-                                                         
-                                                     </div>
-                                                     
-                                                 </div>
-                                                 
-                                             </div>
-                                             
-                                         </div>
+                    <div class="slide-content">
+                        <div class="card-wrapper swiper-wrapper">
+                            <div class="cards-carousel swiper-slide">
+                                <div class="image-content p-0">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="assets/images/test1.png" class="card-img" alt="">
                                     </div>
                                 </div>
-                                <a href="#inam" class="carousel-control-prev d-none d-md-block" data-slide="prev">
-                                    <span class="carousel-control-prev-icon"></span>
-                                </a>
-                                <a href="#inam" class="carousel-control-next d-none d-md-block" data-slide="next">
-                                    <span class="carousel-control-next-icon"></span>
-                                </a>
-                                
+                                <div class="card-content">
+                                    <p class="descriptions">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                                    <h4 class="designation-name">Daine</h4>
+                                    <label>Senior Marketing Mnager</label>
+                                </div>
                             </div>
-                            
+                            <div class="cards-carousel swiper-slide">
+                                <div class="image-content p-0">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="assets/images/test1.png" class="card-img" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p class="descriptions">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                                    <h4 class="designation-name">Michael</h4>
+                                    <label>Director</label>
+                                </div>
+                            </div>
+                            <div class="cards-carousel swiper-slide">
+                                <div class="image-content p-0">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="assets/images/test1.png" class="card-img" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p class="descriptions">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                                    <h4 class="designation-name">Allison</h4>
+                                    <label>Program Manager</label>
+                                </div>
+                            </div>
+                            <div class="cards-carousel swiper-slide">
+                                <div class="image-content p-0">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="assets/images/test1.png" class="card-img" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p class="descriptions">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                                    <h4 class="designation-name">Michael</h4>
+                                    <label>Director</label>
+                                </div>
+                            </div>
+                            <div class="cards-carousel swiper-slide">
+                                <div class="image-content p-0">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="assets/images/test1.png" class="card-img" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p class="descriptions">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                                    <h4 class="designation-name">Daine</h4>
+                                    <label>Senior Marketing Mnager</label>
+                                </div>
+                            </div>
+                            <div class="cards-carousel swiper-slide">
+                                <div class="image-content p-0">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="assets/images/test1.png" class="card-img" alt="">
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <p class="descriptions">Skin masks help us to make are skin fresh and also they protect our skin from the harm rays of sun</p>
+                                    <h4 class="designation-name">Daine</h4>
+                                    <label>Senior Marketing Mnager</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="swiper-button-next swiper-navbtn"></div>
+                    <div class="swiper-button-prev swiper-navbtn"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
             <section>
@@ -881,8 +862,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script> 
-
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="js/scripts.js"></script>
-        
     </body>
 </html>
