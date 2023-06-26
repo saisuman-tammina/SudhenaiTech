@@ -393,6 +393,14 @@ left: -40px !important;
     left: 20px
     }
 }
+.form-outline-inputs input{
+  &::placeholder{
+    color: nth($--app-blue-color,3);
+    font-weight: 500;
+    font-size: 16px;
+    }
+}
+
 .btn-scbscribe{
   border: 0;
   background-color: nth($--app-blue-color,2);
