@@ -770,6 +770,10 @@ body {
 .footer-list li {
   padding: 8px 0px;
 }
+.footer-list li span + a:hover {
+  display: inline-block;
+  border-bottom: 1px solid white !important;
+}
 
 .carousel-mobile {
   filter: drop-shadow(5px 5px 10px black);
