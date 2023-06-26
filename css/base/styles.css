@@ -1335,3 +1335,69 @@ html {
   position: relative;
   top: 30px;
 }/*# sourceMappingURL=styles.css.map */
+.slide-container-services {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+  border-radius: 25px;
+  border-radius: 16px;
+}
+
+.slide-container-services .slide-content-services {
+  margin: 0 40px;
+  padding: 45px 20px;
+  overflow: hidden;
+}
+
+.slide-container-services .slide-content-services .cards-carousel-services {
+  border-radius: 20px;
+  padding: 20px 0;
+  background-color: #ffff;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.slide-container-services .slide-content-services .cards-carousel-services .image-content, .slide-container-services .slide-content-services .cards-carousel-services .card-content {
+  padding: 10px 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.slide-container-services .slide-content-services .cards-carousel-services .image-content {
+  row-gap: 5px;
+  position: relative;
+}
+
+.slide-container-services .slide-content-services .cards-carousel-services .image-content .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.slide-container-services .swiper-navbtn {
+  color: #000084;
+}
+
+.slide-container-services .swiper-button-next {
+  right: 15px;
+}
+
+.slide-container-services .swiper-button-prev {
+  left: 15px;
+}
+
+.slide-container-services .swiper-pagination-bullet {
+  background-color: #000084;
+}
+/*# sourceMappingURL=styles.css.map */

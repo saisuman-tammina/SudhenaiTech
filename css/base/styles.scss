@@ -1495,3 +1495,52 @@ html {
   top:30px
 }
 
+.slide-container-services{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+  border-radius: 25px;
+  border-radius: 16px;
+  .slide-content-services{
+    margin: 0 40px;
+    padding: 45px 20px;
+    overflow: hidden;
+    .cards-carousel-services{
+      border-radius: 20px;
+      padding: 20px 0;
+      background-color: #ffff;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      .image-content,.card-content{
+        padding: 10px 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+      }
+      .image-content{
+        row-gap: 5px;
+        position: relative;
+        .overlay{
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+  .swiper-navbtn{
+    color: nth($--app-blue-color,2);
+  }
+  .swiper-button-next{
+    right: 15px;
+  }
+  .swiper-button-prev{
+    left: 15px;
+  }
+  .swiper-pagination-bullet{
+    background-color: nth($--app-blue-color,2);
+  }
+}
