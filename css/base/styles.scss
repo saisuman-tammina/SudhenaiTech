@@ -320,6 +320,9 @@ body {
     text-align: center;
     padding: 15px 0px;
     border-radius: 10px;
+    width: 60%;
+    margin-left: auto;
+    right: 0;
     box-shadow: #03A9F4 0px 5px, #2196F3 0px 10px, #03A9F4 0px 12px, #03A9F4 0px 15px, #2196F3 0px 19px;
     &::after{
     content: '';
