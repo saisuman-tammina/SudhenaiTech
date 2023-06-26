@@ -11,11 +11,19 @@ body {
 }
 .header-parent{
   background-color: nth($--app-blue-color,1);
+  .item-align{
+    @include medium-device(max-width){
+      justify-content: center;
+    }
+  }
   .contact-details {
     color: white;
     @include flex-items;
-    @include width-height(100%, 50px);
-  
+    @include width-height(100%, 75px);
+    @include small-device(max-width){
+      height: 100px;
+    }
+
     span i {
       font-size: 20px;
       padding-right: 16px;
@@ -64,6 +72,9 @@ body {
   }
   @include small-device(max-width){
     height: auto;
+  }
+  @include extralarge-device(max-width){
+    background-position: right;
   }
   .main-heading  .header-content{
     h1{
@@ -307,7 +318,7 @@ line-height: 24px;
     border-radius: 10px;
     width: 100%;
     height: calc(100% - 75px);
-    @include extrasmall-device(max-width){
+    @include small-device(max-width){
       width: 300px;
     }
     .card-body{
