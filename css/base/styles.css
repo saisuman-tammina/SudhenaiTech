@@ -186,6 +186,11 @@ body {
   place-content: space-evenly;
   margin-bottom: 30px;
 }
+@media (max-width: 766px) {
+  .industrial-card {
+    text-align: center;
+  }
+}
 
 .industries-offer .industries-inner {
   display: grid;
@@ -737,6 +742,10 @@ body {
     display: none;
   }
 }
+.carousel-mobile {
+  filter: drop-shadow(5px 5px 10px black);
+}
+
 header {
   width: 100%;
   z-index: 99;
