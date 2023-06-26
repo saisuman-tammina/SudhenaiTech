@@ -302,21 +302,66 @@ line-height: 24px;
   .testimonial-carousel {
     background-color: #000084 !important;
     border-radius: 50px !important;
-    @include width-height(90%, 625px);
+    @include width-height(90%, auto);
     @include grid-item;
     padding: 0px 50px;
-    @include medium-device(max-width){
-    height: auto;
-    }
     .testimonial-text{
-      height: 120px;
+      height: 200px;
       @include grid-item;
       h3{
         position: relative;
-        top:10px
+        top:10px;
+        @include small-device(max-width){
+          font-size: 28px;
+        }
       }
     }
+
+    .text-carousel{
+
+      @media (max-width: 768px) {
+        .carousel-inner .carousel-item > div {
+            display: none !important;
+        }
+        .carousel-inner .carousel-item > div:first-child {
+            display: block !important;
+        }
+    }
+
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+        display: flex !important;
+    }
+
+      /* display 3 */
+  @media (min-width: 768px) {
+      
+    .carousel-inner-test .carousel-item-test-right.active,
+    .carousel-inner-test .carousel-item-test-next {
+      transform: translateX(33.333%) !important;
+    }
+    
+    .carousel-inner-test .carousel-item-test-left.active, 
+    .carousel-inner-test .carousel-item-test-prev {
+      transform: translateX(-33.333%) !important;
+    }
+}
+
+.carousel-inner-test .carousel-item-test-right,
+.carousel-inner-test .carousel-item-test-left{ 
+  transform: translateX(0) !important;
+}
+
+    }
+
+  
+
+  
+
   }
+
+
   .setup-card{
     background-color: nth($--white-color,1);
     border-radius: 10px;
@@ -324,6 +369,11 @@ line-height: 24px;
     height: calc(100% - 75px);
     @include small-device(max-width){
       width: 300px;
+      margin: auto;
+      max-width: calc(100% - 49%);
+    }
+    @media (max-width:390px){
+      width: 240px;
     }
     .card-body{
       padding: 70px 35px;
