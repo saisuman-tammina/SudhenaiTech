@@ -230,10 +230,10 @@ body {
   align-items: center;
   height: 100vh;
   @include large-device(max-width){
-    height: 76vh;
+    height: 80vh;
   }
   @include small-device(max-width){
-    height: auto;
+    height: 85vh;
   }
   @include extralarge-device(max-width){
     background-position: right;
