@@ -9,6 +9,9 @@
 body {
   font-family: "Poppins" !important;
 }
+p{
+  @include paragraph-styles;
+}
 .header-parent{
   background-color: nth($--app-blue-color,1);
   .item-align{
@@ -269,8 +272,6 @@ body {
 
     .captuine-text{
       color: nth($--white-color,1);
-      font-weight: 400;
-      font-size: 16px;
       line-height: 24px;
     }
   }
@@ -361,17 +362,13 @@ body {
     color: nth($--app-blue-color,4);
   }
   .abountUs-content{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
     @include width-height(98%, auto);
-    color: nth($--black-color,1);
   }
   .about-features {
     font-weight: 500;
     font-size: 16px;
     line-height: 30px;
-    color: #303030;
+    color: nth($--black-color,5);
     padding-top: 30px;
   }
 }
@@ -401,11 +398,12 @@ body {
   line-height: 60px;
   color: nth($--app-blue-color,2);
 }
+
 .industries-text{
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 30px;
-  color: #000000;
+  @include small-device(max-width){
+    width: 100%;
+    padding: 0 40px;
+  }
 }
 
 .top-colour1 {
@@ -464,19 +462,15 @@ body {
 
 .card-title {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
 }
 .card-text{
-  font-weight: 400;
-  font-size: 16px;
   line-height: 24px;
 }
 
 .our-clients{
   .clients-content{
     width: 70%;
-    font-weight: 600;
-    font-size: 16px;
     line-height: 24px
   }
 }
@@ -489,9 +483,8 @@ body {
 }
 
 .card-text{
-  font-weight: 400;
-font-size: 16px;
-line-height: 24px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .testimonial-content {
@@ -561,7 +554,7 @@ left: -40px !important;
     width: 100%;
     background: #D1D1D1 !important;
     border-radius: 10px !important;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     height: 100%;
@@ -577,7 +570,6 @@ left: -40px !important;
 .show-collapse{
   width: 90%;
   margin: 25px auto;
-  padding: 25px 25px;
   border: 3px dotted #000;
   border-radius: 20px;
 }
@@ -1419,7 +1411,7 @@ h5 {
 }
 
 .industries-margin {
-  margin: 150px 0px;
+  margin: 45px 0px;
 }
 
 .industries-margin button {
@@ -1503,6 +1495,11 @@ html {
         display: flex;
         flex-direction: column;
         align-items: center;
+      }
+      .card-content{
+        .descriptions{
+          line-height: 24px;
+        }
       }
       .image-content{
         row-gap: 5px;
