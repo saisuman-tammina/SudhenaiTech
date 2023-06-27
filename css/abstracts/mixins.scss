@@ -13,3 +13,11 @@
     display: grid;
     place-content: center;
 }
+@mixin paragraph-styles{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    width: 98%;
+    height: auto;
+    color: nth($--black-color,5);
+}
