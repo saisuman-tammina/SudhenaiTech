@@ -22,9 +22,12 @@ p{
   }
 
   .contact-details {
-    .mobile-media{
-      width: 40px;
-      height: 40px;
+    .connect-details{
+      a{
+        img{
+          width: 35px;
+        }
+      }
     }
     color: white;
     @include flex-items;
@@ -47,7 +50,6 @@ p{
         display: none !important;
       }
     }
-  
   }
 }
 
