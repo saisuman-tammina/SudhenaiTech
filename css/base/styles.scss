@@ -523,6 +523,10 @@ p{
   font-size: 40px;
   line-height: 60px;
   color: nth($--app-blue-color,2);
+  @media (min-width:320px) and (max-width:375px){
+    font-size: 35px;
+    line-height: 50px;
+  }
 }
 
 .industries-text{
