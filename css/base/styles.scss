@@ -66,6 +66,7 @@ p{
   align-items: center;
   padding: 15px 0px 15px 0px;
   margin: 10px 0px;
+  
   @include large-device(min-width){
     display: none !important;
   }
@@ -205,7 +206,78 @@ p{
   }
   
 }
-
+.client-img{
+  span {
+    position: absolute;
+    border-radius: 100vmax;
+  }
+  .top {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 7px;
+    background: linear-gradient(
+      90deg,
+      transparent 50%,
+      rgba(182, 217, 238, 0.5),
+      rgb(33, 45, 212)
+    );
+  }
+  
+  .bottom {
+    right: 0;
+    bottom: 0;
+    height: 7px;
+    background: linear-gradient(
+      90deg,
+      rgb(57, 255, 20),
+      rgba(57, 255, 20, 0.5),
+      transparent 50%
+    );
+  }
+  
+  .right {
+    top: 0;
+    right: 0;
+    width: 7px;
+    height: 0;
+    background: linear-gradient(
+      180deg,
+      transparent 30%,
+      rgba(0, 255, 255, 0.5),
+      rgb(0, 255, 255)
+    );
+  }
+  
+  .left {
+    left: 0;
+    bottom: 0;
+    width: 7px;
+    height: 0;
+    background: linear-gradient(
+      180deg,
+      rgb(255, 255, 113),
+      rgba(255, 255, 113, 0.5),
+      transparent 70%
+    );
+  }
+  
+  .top {
+    animation: animateTop 5s ease-in-out infinite;
+  }
+  
+  .bottom {
+    animation: animateBottom 5s ease-in-out infinite;
+  }
+  
+  .right {
+    animation: animateRight 5s ease-in-out infinite;
+  }
+  
+  .left {
+    animation: animateLeft 5s ease-in-out infinite;
+  }
+}
 .menu-items {
   li {
     padding: 0;
@@ -238,11 +310,7 @@ p{
   display: flex;
   align-items: center;
   height: 100vh;
-  @include large-device(max-width){
-    height: 80vh;
-  }
   @include small-device(max-width){
-    height: 85vh;
     background-image: unset;
     background-color: #616065;
     .mobile-bg{
@@ -394,9 +462,54 @@ p{
   display: grid;
   place-content: space-evenly;
   margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
   @include medium-device(max-width){
     text-align: center
   }
+  &::before {
+		content: '';
+		position: absolute;
+		z-index: -2;
+		left: -50%;
+		top: -50%;
+		width: 200%;
+		height: 200%;
+		// background-color: #399953;
+		background-repeat: no-repeat;
+		background-size: 50% 50%, 50% 50%;
+		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+		background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%), 
+    linear-gradient(109.5deg, rgb(76, 221, 242) 11.2%, rgb(92, 121, 255) 91.1%),
+    linear-gradient(109.5deg, rgb(76, 221, 242) 11.2%, rgb(92, 121, 255) 91.1%),
+    linear-gradient(95.2deg, rgb(173, 252, 234) 26.8%, rgb(192, 229, 246) 64%);
+		animation: rotate 5s linear infinite;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+	}
+	
+	&::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 6px;
+		top: 6px;
+		width: calc(100% - 12px);
+		height: calc(100% - 12px);
+		background: white;
+		border-radius: 5px;
+		animation: opacityChange 3s infinite alternate;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+	}
+}
+
+
+
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
 }
 
 .industries-offer{
@@ -419,9 +532,9 @@ p{
   }
 }
 
-.top-colour1 {
-  border-top: 15px solid #636363 !important;
-}
+// .top-colour1 {
+//   border-top: 15px solid #636363 !important;
+// }
 
 .blog-section{
   position: relative;
@@ -1154,9 +1267,9 @@ header {
 //   transform: scale(1.1);
 // }
 
-.top-colour2 {
-  border-top: 15px solid #0074BE !important;
-}
+// .top-colour2 {
+//   border-top: 15px solid #0074BE !important;
+// }
 
 // .top-colour2:hover {
 //   /* IE 9 */
@@ -1164,12 +1277,12 @@ header {
 //   transform: scale(1.1);
 // }
 
-.top-colour3 {
-  border-top: 15px solid #000084 !important;
-  border-top-left-radius: 10px !important;
-  border-top-right-radius: 10px !important;
-  transition: transform 0.2s;
-}
+// .top-colour3 {
+//   border-top: 15px solid #000084 !important;
+//   border-top-left-radius: 10px !important;
+//   border-top-right-radius: 10px !important;
+//   transition: transform 0.2s;
+// }
 
 // .top-colour3:hover {
 //   /* IE 9 */
@@ -1647,6 +1760,8 @@ html {
       border-radius: 20px;
       // width: 320px;
       background-color: #ffff;
+      height: 100%;
+      text-align: center;
       .image-content,.card-content{
         padding: 10px 14px;
         display: flex;
@@ -1949,6 +2064,3 @@ html {
 }
 
 
-.common-zindex{
-  z-index: 9999999;
-}
