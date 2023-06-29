@@ -25,10 +25,7 @@ p{
     .connect-details{
       a{
         img{
-          width: 40px;
-          @media (min-width:320px) and (max-width: 330px){
             width: 35px;
-          }
         }
       }
     }
@@ -278,7 +275,19 @@ p{
     animation: animateLeft 5s ease-in-out infinite;
   }
 }
+.menu-dropdown{
+  @include large-device(min-width){
+    height: 100px;
+    display:flex;
+    align-items: center;
+  }
+}
 .menu-items {
+  @include large-device(min-width){
+    height: 100px;
+    display:flex;
+    align-items: center;
+  }
   li {
     padding: 0;
     @include extralarge-device(min-width){
@@ -327,6 +336,9 @@ p{
     background-position: right;
   }
   .main-heading  .header-content{
+    @include small-device(max-width){
+     text-align: center;
+    }
     h1{
       font-weight: 800;
       font-size: 70px;
@@ -339,6 +351,10 @@ p{
     }
     .side-content{
       position: relative;
+      @include small-device(max-width){
+        display: flex;
+        justify-content: center;
+       }
       h1:nth-child(1) {
         color: transparent;
         -webkit-text-stroke: 2px #5cb2de;
@@ -462,46 +478,49 @@ p{
   display: grid;
   place-content: space-evenly;
   margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
   @include medium-device(max-width){
     text-align: center
   }
-  &::before {
-		content: '';
-		position: absolute;
-		z-index: -2;
-		left: -50%;
-		top: -50%;
-		width: 200%;
-		height: 200%;
-		// background-color: #399953;
-		background-repeat: no-repeat;
-		background-size: 50% 50%, 50% 50%;
-		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-		background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%), 
-    linear-gradient(109.5deg, rgb(76, 221, 242) 11.2%, rgb(92, 121, 255) 91.1%),
-    linear-gradient(109.5deg, rgb(76, 221, 242) 11.2%, rgb(92, 121, 255) 91.1%),
-    linear-gradient(95.2deg, rgb(173, 252, 234) 26.8%, rgb(192, 229, 246) 64%);
-		animation: rotate 5s linear infinite;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  &:hover,:active{
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -2;
+      left: -50%;
+      top: -50%;
+      width: 200%;
+      height: 200%;
+      // background-color: #399953;
+      background-repeat: no-repeat;
+      background-size: 50% 50%, 50% 50%;
+      background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+      background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%), 
+      linear-gradient(109.5deg, rgb(76, 221, 242) 11.2%, rgb(92, 121, 255) 91.1%),
+      linear-gradient(109.5deg, rgb(76, 221, 242) 11.2%, rgb(92, 121, 255) 91.1%),
+      linear-gradient(95.2deg, rgb(173, 252, 234) 26.8%, rgb(192, 229, 246) 64%);
+      animation: rotate 5s linear infinite;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: 6px;
+      top: 6px;
+      width: calc(100% - 12px);
+      height: calc(100% - 12px);
+      background: white;
+      border-radius: 5px;
+      animation: opacityChange 3s infinite alternate;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+  }
 
-	}
 	
-	&::after {
-		content: '';
-		position: absolute;
-		z-index: -1;
-		left: 6px;
-		top: 6px;
-		width: calc(100% - 12px);
-		height: calc(100% - 12px);
-		background: white;
-		border-radius: 5px;
-		animation: opacityChange 3s infinite alternate;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 
-	}
 }
 
 
@@ -554,6 +573,7 @@ p{
    background-repeat: no-repeat;
    display: grid;
    place-content: center;
+   background-size: cover;
   .blog-bg-content {
     background-color: #000084;
     padding: 35px 0px 0px 0px;
@@ -1318,7 +1338,7 @@ header {
   z-index: -1;
   background-size: contain;
   background-position-y: center;
-  animation: imghide 4s ease-in-out infinite;
+  // animation: imghide 4s ease-in-out infinite;
   @include medium-device(max-width){
     display: none;
   }
@@ -1337,7 +1357,7 @@ header {
   background-size: contain;
   background-position-y: center;
   background-position-x: right;
-  animation: imgshow 4s ease-in-out infinite;
+  // animation: imgshow 4s ease-in-out infinite;
   animation-delay: 3s;
   @include medium-device(max-width){
     display: none;
@@ -1714,12 +1734,12 @@ h5 {
   .dropdown-menu.show {
     display: flex !important;
     justify-content: space-around;
-    top: 68px !important;
+    top: 97px !important;
   }
   .dropdown:hover .dropdown-menu {
     display: flex;
     justify-content: space-around;
-    top: 68px !important;
+    top: 97px !important;
   }
 }
 
