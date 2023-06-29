@@ -473,7 +473,7 @@ p{
 
 .industrial-card{
   @include width-height(auto, 360px);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
   display: grid;
   place-content: space-evenly;
@@ -501,7 +501,7 @@ p{
       linear-gradient(109.5deg, rgb(76, 221, 242) 11.2%, rgb(92, 121, 255) 91.1%),
       linear-gradient(95.2deg, rgb(173, 252, 234) 26.8%, rgb(192, 229, 246) 64%);
       animation: rotate 5s linear infinite;
-      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      // box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   
     }
     &::after {
@@ -515,7 +515,7 @@ p{
       background: white;
       border-radius: 5px;
       animation: opacityChange 3s infinite alternate;
-      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+      // box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     }
   }
 
@@ -602,6 +602,18 @@ p{
       margin-left: 20px;
     }
 
+  }
+}
+
+@media (min-width:768px){
+  .blog-bg-content{
+    display: block !important;
+  }
+}
+
+@media (max-width:767px){
+  .blog-bg-content{
+    display: none;
   }
 }
 
@@ -1741,7 +1753,7 @@ html {
   width: 100%;
   padding: 40px 0;
   border-radius: 25px;
-  background: nth($--app-blue-color,2);
+  background: #6c5ce7;
   border-radius: 16px;
   .slide-content-clients{
     margin: 0 40px;
@@ -1799,6 +1811,85 @@ html {
     display: none !important;
   }
 }
+
+@media (min-width:320px) and (max-width:767px){
+  .slide-container-blogs{
+    display: block;
+  }
+}
+
+@media (min-width:768px){
+  .slide-container-blogs{
+    display: none !important;
+  }
+}
+
+.slide-container-blogs{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+  border-radius: 25px;
+  background: nth($--app-blue-color,2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  .slide-content-blogs{
+    margin: 0 40px;
+    padding: 45px 10px;
+    overflow: hidden;
+    .cards-carousel{
+      border-radius: 20px;
+      height: 100%;
+      text-align: center;
+      .image-content,.card-content{
+        padding: 10px 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .card-content{
+        color: nth($--white-color,1);
+        .descriptions{
+          line-height: 24px;
+          color: nth($--white-color,1);
+        }
+      }
+      .image-content{
+        row-gap: 5px;
+        position: relative;
+        .overlay{
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          left: 0;
+          top: 0;
+        }
+      }
+      .card-image{
+        .card-img{
+          height: 150px;
+          width: 150px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .swiper-navbtn{
+    color: nth($--app-blue-color,2);
+  }
+  .swiper-button-next{
+    right: 15px;
+  }
+  .swiper-button-prev{
+    left: 15px;
+  }
+  .swiper-pagination-bullet{
+    background-color: nth($--white-color,1);
+  }
+}
+
 
 // testimonails carousel code
 .slide-container{
@@ -2124,3 +2215,20 @@ html {
 }
 
 
+swiper-container {
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+}
+
+swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+}
