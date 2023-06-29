@@ -518,12 +518,7 @@ p{
       // box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     }
   }
-
-	
-
 }
-
-
 
 @keyframes rotate {
 	100% {
@@ -918,8 +913,6 @@ left: -40px !important;
   border-radius: 50px;
 }
 
-
-
 ::-webkit-scrollbar{
   background-color: #000084;
   width: 3px;
@@ -1040,12 +1033,6 @@ left: -40px !important;
   }
  }
 
-// .carousel-pictures{
-//   width: 75%;
-//   margin: auto;
-//   height: 300px;
-// }
-
 .reach-btn{
   height: 55px;
   font-size: 20px !important; 
@@ -1070,11 +1057,6 @@ left: -40px !important;
 .footerstyle{
   position: relative;
 }
-
-
-
-
-
 
 .circles{
   position: absolute;
@@ -1183,8 +1165,6 @@ left: -40px !important;
   border-radius: 50%;
 }
 
-
-
 @keyframes animatefooter {
 
   0%{
@@ -1201,23 +1181,6 @@ left: -40px !important;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 header {
   width: 100%;
   z-index: 99;
@@ -1230,9 +1193,6 @@ header {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-
-
-
 @media (max-width: 991px) {
   .menu-button {
     text-align: center;
@@ -1243,19 +1203,9 @@ header {
   }
 }
 
-
-
-
-
-
-
-
-
 #more {
   display: none;
 }
-
-
 
 .navbar {
   padding: 0;
@@ -1265,21 +1215,12 @@ header {
   padding: 8px 45px;
 }
 
-
-
-
-
-
 .selected {
   color: #000084 !important;
   border-bottom: 3px solid gray;
   height: 40px;
   transition: 0.3s;
 }
-
-
-
-
 
 .sticky {
   position: fixed;
@@ -1290,9 +1231,6 @@ header {
 .sticky+.content {
   padding-top: 60px;
 }
-
-
-
 
 .about-us h1 {
   color: #000084;
@@ -2103,10 +2041,6 @@ html {
   }
 }
 
-
-
-
-
 .wrappers div {
   height: 60px;
   width: 60px;
@@ -2212,23 +2146,4 @@ html {
 
 .grid-align{
   display: grid;
-}
-
-
-swiper-container {
-  width: 300px;
-  height: 300px;
-  padding: 50px;
-}
-
-swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 300px;
-}
-
-swiper-slide img {
-  display: block;
-  width: 100%;
 }
