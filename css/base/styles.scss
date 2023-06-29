@@ -678,9 +678,7 @@ p{
   }
 
 }
-.test-cards{
 
-    }
 .carousel-control-next , .carousel-control-prev{
   background-color: nth($--app-blue-color,2) !important;
   width: 50px !important;
@@ -1274,53 +1272,11 @@ header {
   font-weight: 800;
 }
 
-
-
-
-// .top-colour:hover {
-//   /* IE 9 */
-//   /* Safari 3-8 */
-//   transform: scale(1.1);
-// }
-
-
-
-// .top-colour1:hover {
-//   /* IE 9 */
-//   /* Safari 3-8 */
-//   transform: scale(1.1);
-// }
-
-// .top-colour2 {
-//   border-top: 15px solid #0074BE !important;
-// }
-
-// .top-colour2:hover {
-//   /* IE 9 */
-//   /* Safari 3-8 */
-//   transform: scale(1.1);
-// }
-
-// .top-colour3 {
-//   border-top: 15px solid #000084 !important;
-//   border-top-left-radius: 10px !important;
-//   border-top-right-radius: 10px !important;
-//   transition: transform 0.2s;
-// }
-
-// .top-colour3:hover {
-//   /* IE 9 */
-//   /* Safari 3-8 */
-//   transform: scale(1.1);
-// }
-
-
-
-
-
-
-
-
+.clients-details{
+  @include small-device(max-width){
+    display: none;
+  }
+}
 
 .our-clients {
 
@@ -1763,6 +1719,70 @@ html {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+.slide-container-clients{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+  border-radius: 25px;
+  background: nth($--app-blue-color,2);
+  border-radius: 16px;
+  .slide-content-clients{
+    margin: 0 40px;
+    padding: 45px 20px;
+    overflow: hidden;
+    .cards-carousel{
+      border-radius: 20px;
+      height: 100%;
+      .image-content{
+        padding: 10px 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 5px;
+        position: relative;
+        .overlay{
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          left: 0;
+          top: 0;
+        }
+      }
+      .card-image{
+        .card-img{
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .swiper-navbtn{
+    color: nth($--app-blue-color,2);
+  }
+  .swiper-button-next{
+    right: 15px;
+  }
+  .swiper-button-prev{
+    left: 15px;
+  }
+  .swiper-pagination-bullet{
+    background-color: nth($--white-color,1);
+  }
+}
+
+.clients-mobile-view{
+  @media (min-width:320px) and (max-width:767px){
+    display: block;
+  }
+}
+
+.clients-mobile-view{
+  @media (min-width:768px){
+    display: none !important;
+  }
+}
 
 // testimonails carousel code
 .slide-container{

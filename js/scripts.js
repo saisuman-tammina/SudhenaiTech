@@ -7,22 +7,6 @@
 // Use this file to add JavaScript to your project
 
 
-// function myFunction() {
-//   var dots = document.getElementById("dots");
-//   var moreText = document.getElementById("more");
-//   var btnText = document.getElementById("myBtn");
-
-//   if (dots.style.display === "none") {
-//     dots.style.display = "inline";
-//     btnText.innerHTML = "Read more"; 
-//     moreText.style.display = "none";
-//   } else {
-//     dots.style.display = "none";
-//     btnText.innerHTML = "Read less"; 
-//     moreText.style.display = "inline";
-//   }
-// }
-
 $(document).ready(function(){
   $(".content").slice(0, 7).show();
   $("#loadMore").on("click", function(e){
@@ -34,17 +18,6 @@ $(document).ready(function(){
   });
   
 })
-
-// document.addEventListener('scroll', () =>{
-//   const header = document.querySelector('.navigation');
-
-//   if(window.scrollY > 0 ){
-//     header.classList.add('scrolled');
-//   }
-//   else{
-//     header.classList.remove('scrolled')
-//   }
-// })
 
 const navbar = document.querySelector('.nav-fixed');
 window.onscroll = () => {
@@ -67,9 +40,6 @@ $('body').append('<div id="toTop" class="top-btn"><img src="assets/images/arrow-
         $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
     }); 
-
-// const element = document.querySelector('.top-colour');
-// element.classList.add('animate__animated', 'animate__flip', 'animate__infinite');
 
 
 var swiper = new Swiper(".slide-content", {
