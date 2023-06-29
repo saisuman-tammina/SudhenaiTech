@@ -1038,6 +1038,22 @@ left: -40px !important;
   height: 55px;
   font-size: 20px !important; 
   font-weight: 500 !important;
+  background-color: #fff !important;
+  border: 0 !important;
+  border-radius: 0px !important;
+  box-shadow: 1px 0px 4px 1px #7f9293 inset;;
+}
+.call-btns{
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 45px;
+    background: #fff;
+    left: -14px;
+    top: 6px;
+  }
 }
 .footerstyle{
   position: relative;
