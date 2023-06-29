@@ -201,6 +201,21 @@ p {
   animation: animateLeft 5s ease-in-out infinite;
 }
 
+@media (min-width: 991px) {
+  .menu-dropdown {
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 991px) {
+  .menu-items {
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+}
 .menu-items li {
   padding: 0;
   list-style: none;
@@ -383,15 +398,17 @@ p {
   display: grid;
   place-content: space-evenly;
   margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
 }
 @media (max-width: 766px) {
   .industrial-card {
     text-align: center;
   }
 }
-.industrial-card::before {
+.industrial-card:hover, .industrial-card :active {
+  position: relative;
+  overflow: hidden;
+}
+.industrial-card:hover::before, .industrial-card :active::before {
   content: "";
   position: absolute;
   z-index: -2;
@@ -406,7 +423,7 @@ p {
   animation: rotate 5s linear infinite;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
-.industrial-card::after {
+.industrial-card:hover::after, .industrial-card :active::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -461,6 +478,7 @@ p {
   background-repeat: no-repeat;
   display: grid;
   place-content: center;
+  background-size: cover;
 }
 @media (max-width: 991px) {
   .blog-section {
@@ -1146,7 +1164,6 @@ header {
   z-index: -1;
   background-size: contain;
   background-position-y: center;
-  animation: imghide 4s ease-in-out infinite;
 }
 @media (max-width: 766px) {
   .our-clients::after {
@@ -1167,7 +1184,6 @@ header {
   background-size: contain;
   background-position-y: center;
   background-position-x: right;
-  animation: imgshow 4s ease-in-out infinite;
   animation-delay: 3s;
 }
 @media (max-width: 766px) {
@@ -1508,12 +1524,12 @@ h5 {
   .dropdown-menu.show {
     display: flex !important;
     justify-content: space-around;
-    top: 68px !important;
+    top: 97px !important;
   }
   .dropdown:hover .dropdown-menu {
     display: flex;
     justify-content: space-around;
-    top: 68px !important;
+    top: 97px !important;
   }
 }
 @media only screen and (min-width: 992px) {
