@@ -838,6 +838,7 @@ p {
   right: 0;
 }
 
+.active,
 .nav-link:hover {
   border-bottom: 2px solid #0074BE !important;
 }
@@ -1585,6 +1586,10 @@ html {
 
 #section2 {
   height: 600px;
+}
+
+.main-dropdown a:focus {
+  border-bottom: 2px solid #0074BE !important;
 }
 
 
