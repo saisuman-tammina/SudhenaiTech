@@ -1316,7 +1316,6 @@ header {
   /* top: 278px; */
   bottom: 15%;
   height: 38px;
-  border: 1px solid #25D366;
   border-radius: 5px;
 }
 @media (max-width: 991px) {
