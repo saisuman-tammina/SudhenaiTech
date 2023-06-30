@@ -847,8 +847,8 @@ p {
 
 .accordion-item .accordion-lists {
   width: 100%;
-  background: #D1D1D1 !important;
-  border-radius: 10px !important;
+  background: linear-gradient(331deg, #0093E9 0%, #80D0C7 100%) !important;
+  border-radius: 0 !important;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -858,14 +858,16 @@ p {
 }
 
 .accordion-item .accordion-lists span {
-  color: #000;
+  color: #fff;
 }
 
 .show-collapse {
-  width: 90%;
-  margin: 25px auto;
-  border: 3px dotted #000;
-  border-radius: 20px;
+  width: 100%;
+  border-style: solid;
+  border-width: 3px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(331deg, #0093E9 0%, #80D0C7 100%);
+  border-top: 0;
 }
 
 .email-bg {
