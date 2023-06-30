@@ -1058,6 +1058,9 @@ left: -40px !important;
 }
 .footerstyle{
   position: relative;
+  @include large-device(max-width){
+    padding-bottom: 80px;
+  }
 }
 
 .circles{
