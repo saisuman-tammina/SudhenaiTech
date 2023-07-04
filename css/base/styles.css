@@ -1321,6 +1321,7 @@ header.sticky .nav-styles {
 
 .whats-app {
   width: 40px;
+  height: 40px !important;
   /* background: #3498db; */
   position: fixed;
   right: 15px;
@@ -1361,8 +1362,8 @@ header.sticky .nav-styles {
 .top-btn {
   background: coral;
   color: #fff;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   box-shadow: #002e5b;
   font-size: 20px;
