@@ -470,6 +470,14 @@ p{
   }
 }
 
+.about-page-desc{
+  @include small-device(max-width){
+    width: 100%;
+  }
+  @include medium-device(min-width){
+    width: 60%;
+  }
+}
 
 .industrial-card{
   @include width-height(auto, 360px);
@@ -1623,9 +1631,9 @@ h5 {
   }
 }
 
-.industries-margin {
-  margin: 45px 0px;
-}
+// .industries-margin {
+//   margin: 45px 0px;
+// }
 
 .industries-margin button {
   border-radius: 44px;
