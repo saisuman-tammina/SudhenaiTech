@@ -20,12 +20,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
+<script>
+      window.addEventListener('scroll', function() {
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 0)
+  });
+</script>
 </head>
 
 <body>
     <main>
         <!-- Navigation-->
-        <header>
+        <header >
+            <div>
             <div class="container-fluid header-parent">
                 <div class="container">
                     <div class="contact-details">
@@ -36,7 +43,7 @@
                                 <div class="tel-number"><span><i class="bi bi-telephone"></i></span><span>+1
                                         5716852150</span></div>
                             </div>
-                            <div class="col-lg-4 col-sm-12 d-flex  justify-content-center connect-details">
+                            <div class="col-lg-4 col-sm-12 d-flex  justify-content-lg-end justify-content-sm-center connect-details">
                                 <div>
                                     <a href="#"><img src="./assets/images/icons8-facebook.svg"
                                             class="mobile-media animate__animated animate__heartBeat animate__infinite animate__delay-2s"
@@ -66,7 +73,9 @@
                                 </button>
                             </div>
                             <div class="col-6">
-                                <button type="button" class="btn btn-outline-warning w-100 mb-sm-2 reach-btn call-btns">Contact US</button>
+                                <button type="button"
+                                    class="btn btn-outline-warning w-100 mb-sm-2 reach-btn call-btns">Contact
+                                    US</button>
                             </div>
                         </div>
                     </div>
@@ -130,6 +139,7 @@
                     </div>
                 </nav>
             </div>
+        </div>
         </header>
         <!-- Header-->
         <div class="main-headers">
@@ -146,16 +156,23 @@
                                     class="display-5 fw-bolder mb-2 animate__animated animate__bounceInLeft animate__slower">
                                     GREAT IDEAS</h1>
                             </div>
-                            <p class="captuine-text mb-4 d-none d-md-block">Lorem Ipsum has been the industry's
-                                standard<br> when an unknown printer took make a type specimen book.</p>
-                            <h5 class="text-white"><span>Request Demo </span> <a href=""><img
-                                        src="./assets/images/arrowcircleright.png" alt=""></a> </h5>
+                            <p class="captuine-text mb-4 d-none d-md-block">
+                                Lorem Ipsum has been the industry's
+                                standard<br> when an unknown printer took make a type specimen book.
+
+                            </p>
+                            <h5  class="demo-text">
+                                <a class="text-white demo-anchor" href="#">
+                                    Request Demo <img src="./assets/images/arrowcircleright.png" alt="">
+                                </a>
+                            </h5>
                         </div>
                     </div>
                     <div class="col-md-6 mobile-bg">
-                       <div>
-                        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_tyi61jpp.json" speed="2" loop autoplay></lottie-player>
-                       </div>
+                        <div>
+                            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_tyi61jpp.json" speed="2"
+                                loop autoplay></lottie-player>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -757,7 +774,7 @@
                             </div>
                         </div>
                     </div>
-                <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination"></div>
 
                 </div>
                 <!-- <div class="swiper-button-next swiper-navbtn"></div>
@@ -789,7 +806,7 @@
                 </div>
             </div>
             <div class="clients-mobile-view">
-                 <div class="align-card-postion">
+                <div class="align-card-postion">
                     <h3 class="text-center common-heading">Take a look at our clients</h3>
                     <div class="wrapper">
                         <div class="dot white-dot" id="dot-1"></div>
@@ -820,7 +837,7 @@
                                     <div class="card-image">
                                         <img class="card-img" src="assets/images/intocareers2.svg" alt="">
                                     </div>
-                                </div>                  
+                                </div>
                             </div>
                             <div class="cards-carousel swiper-slide">
                                 <div class="image-content p-0">
@@ -957,7 +974,7 @@
                 <div class="inner-headers flex">
                     <h3 class="fw-bold industries text-white text-center text-md-left">Frequently asked questions</h3>
                 </div>
-    
+
                 <!--Waves Container-->
                 <div>
                     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -975,7 +992,7 @@
                     </svg>
                 </div>
                 <!--Waves end-->
-    
+
             </div>
             <div class="container mt-2 p-5">
                 <div class="accordion w-100 w-md-75 m-auto" id="accordionExample">

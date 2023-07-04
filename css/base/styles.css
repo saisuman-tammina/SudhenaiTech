@@ -13,6 +13,10 @@ p {
   color: #373D3F;
 }
 
+.demo-anchor {
+  text-decoration: none;
+}
+
 .header-parent {
   background-color: #0074BE;
 }
@@ -30,7 +34,7 @@ p {
   height: 75px;
 }
 .header-parent .contact-details .connect-details a img {
-  width: 35px;
+  width: 28px;
 }
 @media (max-width: 576px) {
   .header-parent .contact-details {
@@ -1131,6 +1135,19 @@ header {
   z-index: 99;
   transition: background-color 0.3s ease-in-out;
   background-color: #fff;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+header.sticky {
+  position: fixed;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+header.sticky .nav-styles {
+  height: 60px;
+  transition: 500ms;
 }
 
 .nav-active {
@@ -1563,6 +1580,7 @@ h5 {
     display: flex !important;
     justify-content: space-around;
     top: 97px !important;
+    transition: 500ms;
   }
   .dropdown:hover .dropdown-menu {
     display: flex;
