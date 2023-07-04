@@ -5,7 +5,10 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
-
+window.addEventListener('scroll', function() {
+  let header = document.querySelector('header');
+  header.classList.toggle('sticky', window.scrollY > 0)
+});
 
 $(document).ready(function(){
   $(".content").slice(0, 7).show();

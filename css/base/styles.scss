@@ -409,6 +409,7 @@ p{
 
 .nav-styles{
   height: 100px;
+  cursor: pointer;
   @include large-device(max-width){
     height: 75px;
   }
@@ -1679,12 +1680,29 @@ h5 {
     display: flex !important;
     justify-content: space-around;
     top: 97px !important;
+    animation: cards 1s ;
     transition: 500ms;
+
   }
   .dropdown:hover .dropdown-menu {
     display: flex;
     justify-content: space-around;
     top: 97px !important;
+    animation: cards 2s;
+
+  }
+}
+
+@keyframes cards {
+  0%{
+    opacity: 0;
+    transform: translate3d(0, -6%, 0);
+
+  }
+  100%{
+    opacity: 1;
+    transform: translate3d(0, 1%, 0);
+    
   }
 }
 
