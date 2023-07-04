@@ -475,11 +475,12 @@ p{
 }
 
 .about-page-desc{
+  text-align: justify;
   @include small-device(max-width){
     width: 100%;
   }
   @include medium-device(min-width){
-    width: 60%;
+    width: 55%;
   }
 }
 
@@ -2237,3 +2238,7 @@ margin: 0px;
 // .sticky + .content {
 //   padding-top: 60px;
 // }
+.main-heading :where(a,p){
+  text-decoration: none;
+  color: #fff;
+}
