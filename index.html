@@ -991,77 +991,36 @@
                 <!--Waves end-->
 
             </div>
-            <div class="container mt-2 p-5">
-                <div class="accordion w-100 w-md-75 m-auto" id="accordionExample">
-                    <div class="accordion-item mb-4">
-                        <button class="accordion-button accordion-lists" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <span>
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500?
-                            </span>
-                        </button>
-                        <div id="collapseOne" class="accordion-collapse collapse show show-collapse"
-                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p class="text-center">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati,
-                                    in labore quidem corporis facilis aspernatur debitis dolores quae iusto numquam
-                                    delectus provident.
-                                    Omnis dolor aliquid totam quis, amet ipsa minus, officiis, autem sed vitae enim
-                                    optio alias ea.
-                                    Natus, culpa accusantium illum quaerat incidunt dolorem dicta nesciunt deleniti
-                                    mollitia delectus!
-                                </p>
-                            </div>
+            <div class="container mt-2 p-lg-5 p-0">
+                <div class="accordion">
+                    <div class="content-bx active">
+                        <div class="label">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                        <div class="accord-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Beatae mollitia obcaecati dolores nam labore quidem odit sed consequuntur, 
+                            laudantium delectus in doloribus commodi vel dolore eum earum illo suscipit adipisci.
+                            laudantium delectus in doloribus commodi vel dolore eum earum illo suscipit adipisci.
+                            </p>
                         </div>
                     </div>
-                    <div class="accordion-item mb-4">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button accordion-lists" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-                                <span>
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500?
-                                </span>
-                            </button>
-
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse show-collapse"
-                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p class="text-center">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati,
-                                    in labore quidem corporis facilis aspernatur debitis dolores quae iusto numquam
-                                    delectus provident.
-                                    Omnis dolor aliquid totam quis, amet ipsa minus, officiis, autem sed vitae enim
-                                    optio alias ea.
-                                    Natus, culpa accusantium illum quaerat incidunt dolorem dicta nesciunt deleniti
-                                    mollitia delectus!
-                                </p>
-                            </div>
+                    <div class="content-bx">
+                        <div class="label">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                        <div class="accord-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Beatae mollitia obcaecati dolores nam labore quidem odit sed consequuntur, 
+                            laudantium delectus in doloribus commodi vel dolore eum earum illo suscipit adipisci.
+                            laudantium delectus in doloribus commodi vel dolore eum earum illo suscipit adipisci.
+                            </p>
                         </div>
                     </div>
-                    <div class="accordion-item mb-4">
-                        <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button accordion-lists" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
-                                <span>
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500?
-                                </span>
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse show-collapse"
-                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <p class="text-center">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati,
-                                    in labore quidem corporis facilis aspernatur debitis dolores quae iusto numquam
-                                    delectus provident.
-                                    Omnis dolor aliquid totam quis, amet ipsa minus, officiis, autem sed vitae enim
-                                    optio alias ea.
-                                    Natus, culpa accusantium illum quaerat incidunt dolorem dicta nesciunt deleniti
-                                    mollitia delectus!
-                                </p>
-                            </div>
+                    <div class="content-bx">
+                        <div class="label">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+                        <div class="accord-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Beatae mollitia obcaecati dolores nam labore quidem odit sed consequuntur, 
+                            laudantium delectus in doloribus commodi vel dolore eum earum illo suscipit adipisci.
+                            laudantium delectus in doloribus commodi vel dolore eum earum illo suscipit adipisci.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1224,6 +1183,15 @@
     <script src="js/scripts.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/blogs_carousel.js"></script>
+    <script>
+        const accordion = document.getElementsByClassName('content-bx');
+
+        for (i=0; i<accordion.length; i++){
+        accordion[i].addEventListener('click', function(){
+            this.classList.toggle('active')
+        })
+        }
+    </script>
 </body>
 
 </html>
