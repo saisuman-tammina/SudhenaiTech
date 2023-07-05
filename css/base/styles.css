@@ -2147,6 +2147,12 @@ input[type=text] {
   margin: auto;
 }
 
+@media (max-width: 576px) {
+  lottie-player {
+    width: 300px !important;
+  }
+}
+
 .main-heading :where(a, p) {
   text-decoration: none;
   color: #fff;
