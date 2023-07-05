@@ -407,6 +407,15 @@ p{
 	}
 }
 
+.services-heading{
+  h1{
+    color: nth($--app-blue-color,2);
+  }
+  p{
+    color: nth($--black-color,1);
+  }
+}
+
 .nav-styles{
   height: 100px;
   cursor: pointer;
