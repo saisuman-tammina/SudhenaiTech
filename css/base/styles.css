@@ -2805,7 +2805,7 @@ input[type=text] {
 }
 
 .accordion .content-bx .label::before {
-  content: '+';
+  content: url(../../assets/images/icons8-drop-down-30.png);
   position: absolute;
   top: 15px;
   right: 15px;
@@ -2830,7 +2830,7 @@ input[type=text] {
 }
 
 .accordion .content-bx.active .label::before {
-  content: '-';
+  content: url(../../assets/images/icons8-collapse-arrow-30.png);
 }
 
 .accordion .content-bx.active .accord-content {
