@@ -680,9 +680,6 @@ p {
   border-radius: 0px 0px 45px 0px;
 }
 
-.footer-bg {
-  padding: 60px 120px !important;
-}
 .footer-bg .footer-grid {
   display: flex;
   justify-content: space-between;
@@ -1898,7 +1895,7 @@ html {
 }
 
 .inner-headers {
-  height: 20vh;
+  height: 25vh;
   width: 100%;
   margin: 0;
   padding: 0;
