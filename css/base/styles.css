@@ -926,7 +926,7 @@ p {
 }
 
 .footer-bg {
-  padding: 60px 120px !important;
+  padding: 50px 20px 40px 150px !important;
 }
 
 .footer-bg .footer-grid {
@@ -2361,8 +2361,8 @@ html {
   background-color: #000084;
   position: absolute;
   border-radius: 50%;
-  left: 44%;
-  bottom: -50px;
+  left: 40px;
+  bottom: -51px;
   margin: -5px;
 }
 
@@ -2404,7 +2404,7 @@ html {
 
 .slide-container-services .slide-content-services {
   margin: 0 40px;
-  padding: 45px 20px;
+  padding: 0px 20px;
   overflow: hidden;
 }
 
@@ -2469,7 +2469,7 @@ html {
 }
 
 .inner-headers {
-  height: 20vh;
+  height: 25vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -2656,7 +2656,6 @@ html {
 
 input[type=text] {
   color: #000084 !important;
-  padding: 0px 0px 0px 30px;
   margin: 0px;
 }
 
