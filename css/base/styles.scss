@@ -770,6 +770,7 @@ left: -40px !important;
 }
 
 .footer-bg {
+  padding: 50px 20px 40px 150px !important;
   .footer-grid{
    display: flex;
    justify-content: space-between;
@@ -1942,8 +1943,8 @@ html {
           background-color: #000084;
           position: absolute;
           border-radius: 50%;
-          left: 44%;
-          bottom: -50px;
+          left: 40px;
+          bottom: -51px;
           margin: -5px;
           }
       }
@@ -1983,7 +1984,7 @@ html {
   border-radius: 16px;
   .slide-content-services{
     margin: 0 40px;
-    padding: 45px 20px;
+    padding: 0px 20px;
     overflow: hidden;
     .cards-carousel-services{
       border-radius: 20px;
@@ -2208,7 +2209,6 @@ html {
 
 input[type=text] {
 color: #000084 !important;
-padding: 0px 0px 0px 30px;
 margin: 0px;
 }
 

@@ -680,6 +680,9 @@ p {
   border-radius: 0px 0px 45px 0px;
 }
 
+.footer-bg {
+  padding: 50px 20px 40px 150px !important;
+}
 .footer-bg .footer-grid {
   display: flex;
   justify-content: space-between;
@@ -1809,8 +1812,8 @@ html {
   background-color: #000084;
   position: absolute;
   border-radius: 50%;
-  left: 44%;
-  bottom: -50px;
+  left: 40px;
+  bottom: -51px;
   margin: -5px;
 }
 .slide-container .slide-content .cards-carousel .card-image .card-img {
@@ -1846,7 +1849,7 @@ html {
 }
 .slide-container-services .slide-content-services {
   margin: 0 40px;
-  padding: 45px 20px;
+  padding: 0px 20px;
   overflow: hidden;
 }
 .slide-container-services .slide-content-services .cards-carousel-services {
@@ -2067,7 +2070,6 @@ html {
 
 input[type=text] {
   color: #000084 !important;
-  padding: 0px 0px 0px 30px;
   margin: 0px;
 }
 
