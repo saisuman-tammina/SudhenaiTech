@@ -20,12 +20,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
-<script>
-      window.addEventListener('scroll', function() {
-    let header = document.querySelector('header');
-    header.classList.toggle('sticky', window.scrollY > 0)
-  });
-</script>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+    <script>
+        window.addEventListener('scroll', function() {
+        let header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0)
+    });
+    </script>
 </head>
 
 <body>
@@ -46,16 +49,16 @@
                             <div class="col-lg-4 col-sm-12 d-flex  justify-content-lg-end justify-content-center connect-details">
                                 <div>
                                     <a href="https://www.facebook.com/sudenaitech"><img src="./assets/images/icons8-facebook.svg"
-                                            class="mobile-media animate__animated animate__heartBeat animate__infinite animate__delay-2s"
+                                            class="mobile-media"
                                             alt=""></a>
                                     <a href="https://twitter.com/sudenaitech" class="px-2"><img src="./assets/images/icons8-twitter.svg"
-                                            class="mobile-media animate__animated animate__heartBeat animate__infinite animate__delay-2s"
+                                            class="mobile-media"
                                             alt=""></a>
                                     <a href="https://www.linkedin.com/company/sudenaitech" class="px-2"><img src="./assets/images/icons8-linkedin.svg"
-                                            class="mobile-media animate__animated animate__heartBeat animate__infinite animate__delay-2s"
+                                            class="mobile-media"
                                             alt=""></a>
                                     <a href="https://www.instagram.com/sudenaitech/"><img src="./assets/images/icons8-instagram.svg"
-                                            class="mobile-media aanimate__animated animate__heartBeat animate__infinite animate__delay-2s"
+                                            class="mobile-media"
                                             width="20px" alt=""></a>
                                 </div>
                             </div>
@@ -550,7 +553,7 @@
                     </div>
                 </div>
                 <div class="plus-btn">
-                    <a href="#" id="loadMore" class="animate__animated animate__heartBeat animate__infinite">Load
+                    <a href="#" id="loadMore">Load
                         More</a>
                 </div>
 
@@ -1160,6 +1163,15 @@
             this.classList.toggle('active')
         })
         }
+    </script>
+     <script>
+        $(document).ready(function () {
+            $('.industries-offer').waypoint(function (direction) {
+                $('.industries-offer').addClass('animate__animated animate__fadeInRight')
+        }, {
+            offset: '400px'
+        });
+    })
     </script>
 </body>
 
