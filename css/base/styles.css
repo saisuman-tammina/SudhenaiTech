@@ -810,8 +810,9 @@ p {
 }
 
 .active,
-.nav-link:hover {
+.nav-link:hover, :focus {
   color: #0093E9 !important;
+  border-bottom: 2px solid #0074BE !important;
 }
 
 #loadMore {
@@ -2159,5 +2160,4 @@ input[type=text] {
   border-image-slice: 1;
   border-image-source: linear-gradient(331deg, #0093E9 0%, #80D0C7 100%);
   border-top: 0;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

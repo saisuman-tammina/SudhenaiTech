@@ -891,10 +891,12 @@ left: -40px !important;
 }
 
 .active,
-.nav-link:hover{
+.nav-link:hover,:focus{
     color: #0093E9 !important;
-
+    border-bottom: 2px solid #0074BE !important; 
 }
+    
+
 
 #loadMore {
   width: 200px;
