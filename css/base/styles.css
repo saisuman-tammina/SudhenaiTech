@@ -1594,6 +1594,8 @@ h5 {
   color: #fff;
   cursor: pointer;
   transition: all 0.25s ease;
+  width: 145px !important;
+  height: 40px;
 }
 
 @media (max-width: 767px) {
