@@ -20,8 +20,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script>
         window.addEventListener('scroll', function() {
         let header = document.querySelector('header');
@@ -173,7 +171,7 @@
                 </div>
             </div>
             <div class="whats-app">
-                <a href="#"><img width="30" height="30" src="assets/images/whatsapp.svg"></a>
+                <a href="#"><img width="40px" height="40px" src="assets/images/whatsapp.svg"></a>
                 <!-- <a href="">+1 703-349-1074</a> -->
             </div>
         </div>
@@ -200,7 +198,7 @@
 
                             </p>
                         </div>
-                        <div class="row align-items-center justify-content-between mt-5 about-content mobile-icons">
+                        <div class="row align-items-center justify-content-center mt-5 about-content mobile-icons">
                             <div class="col-md-2 d-flex flex-column align-items-center">
                                 <div>
                                     <img src="./assets/images/development.svg" alt="developemnt" width="65px">
@@ -765,7 +763,7 @@
         </section>
         <section class="container-fluid our-clients">
             <div class="container py-3 clients-details">
-                <h3 class="text-center mb-2 common-heading typing-animie ">Take a look at our <span class="text"></span></h3>
+                <h3 class="text-center mb-2 common-heading typing-animie ">Take a look at our <span class="text">Clients</span></h3>
                 <p class="text-center clients-content m-auto">Lorem Ipsum has been the industry's standard dummy text
                     ever since the 1500s,
                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -1156,70 +1154,11 @@
     <script src="js/blogs_carousel.js"></script>
     <script>
         const accordion = document.getElementsByClassName('content-bx');
-
         for (i=0; i<accordion.length; i++){
         accordion[i].addEventListener('click', function(){
             this.classList.toggle('active')
         })
         }
-    </script>
-     <script>
-        $(document).ready(function () {
-            $('.industries-offer').waypoint(function (direction) {
-                $('.industries-offer').addClass('animate__animated animate__fadeInRight')
-        }, {
-            offset: '400px'
-        });
-    })
-    </script>
-    <script>
-        var words = ['Clients'],
-        part,
-        i = 0,
-        offset = 0,
-        len = words.length,
-        forwards = true,
-        skip_count = 0,
-        skip_delay = 15,
-        speed = 80;
-        var wordflick = function () {
-        setInterval(function () {
-        if (forwards) {
-            if (offset >= words[i].length) {
-            ++skip_count;
-            if (skip_count == skip_delay) {
-                forwards = false;
-                skip_count = 0;
-            }
-            }
-        }
-        else {
-            if (offset == 0) {
-            forwards = true;
-            i++;
-            offset = 0;
-            if (i >= len) {
-                i = 0;
-            }
-            }
-        }
-        part = words[i].substr(0, offset);
-        if (skip_count == 0) {
-            if (forwards) {
-            offset++;
-            }
-            else {
-            offset--;
-            }
-        }
-        $('.text').text(part);
-        },speed);
-        };
-
-        $(document).ready(function () {
-        wordflick();
-        });
-
     </script>
 </body>
 
