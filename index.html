@@ -22,7 +22,7 @@
     <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
     <script>
         window.addEventListener('scroll', function() {
         let header = document.querySelector('header');
@@ -766,7 +766,7 @@
         </section>
         <section class="container-fluid our-clients">
             <div class="container py-3 clients-details">
-                <h3 class="text-center mb-2 common-heading">Take a look at our clients</h3>
+                <h3 class="text-center mb-2 common-heading typing-animie ">Take a look at our <span class="text"></span></h3>
                 <p class="text-center clients-content m-auto">Lorem Ipsum has been the industry's standard dummy text
                     ever since the 1500s,
                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -1173,6 +1173,14 @@
         });
     })
     </script>
+  <script>
+    var typing=new Typed(".text", {
+       strings: ["", "Clients"],
+       typeSpeed: 100,
+       backSpeed: 40,
+       loop: true,
+   });
+</script>
 </body>
 
 </html>

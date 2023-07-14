@@ -638,10 +638,16 @@ p{
 
 .common-heading{
   font-weight: 800;
-    font-size: 40px;
-    line-height: 60px;
-    color: #000084;
+  font-size: 40px;
+  line-height: 60px;
+  color: nth($--app-blue-color,5);
 }
+
+.text{
+  font-family: sans-serif !important;
+  color: nth($--app-blue-color,5);
+}
+
 
 .card-text{
   font-size: 16px;
@@ -868,7 +874,7 @@ left: -40px !important;
 
 .hide-content{
   padding: 25px 20px 25px 2px;
-  height: calc(100vh - 30vh);
+  height: calc(100vh - 20vh);
   overflow-y: scroll;
   overflow-x: hidden;
   position: relative;
@@ -878,6 +884,11 @@ left: -40px !important;
     right: 0;
   }
 }
+
+.hide-content::-webkit-scrollbar{
+  width: 0 !important;
+}
+
 .active,
 .nav-link:hover{
     color: #0093E9 !important;
@@ -2266,14 +2277,7 @@ lottie-player{
       border: none !important;
     }
     .accord-content::-webkit-scrollbar{
-      width: 5px;
-    }
-    .accord-content::-webkit-scrollbar-track {
-      background: nth($--white-color,1);
-    }
-    .accord-content::-webkit-scrollbar-thumb{
-      background-color: nth($--app-mediumgrey-color,1);
-      border-radius: 20px;
+      width: 0 !important;
     }
   }
 }

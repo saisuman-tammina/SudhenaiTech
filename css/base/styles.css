@@ -757,7 +757,12 @@ p {
   font-weight: 800;
   font-size: 40px;
   line-height: 60px;
-  color: #000084;
+  color: #0093E9;
+}
+
+.text {
+  font-family: sans-serif !important;
+  color: #0093E9;
 }
 
 .card-text {
@@ -1054,7 +1059,7 @@ p {
 
 .hide-content {
   padding: 25px 20px 25px 2px;
-  height: calc(100vh - 30vh);
+  height: calc(100vh - 20vh);
   overflow-y: scroll;
   overflow-x: hidden;
   position: relative;
@@ -1065,6 +1070,10 @@ p {
   position: sticky;
   top: 0;
   right: 0;
+}
+
+.hide-content::-webkit-scrollbar {
+  width: 0 !important;
 }
 
 .active,
@@ -2739,16 +2748,7 @@ input[type=text] {
 }
 
 .accordion .content-bx .accord-content::-webkit-scrollbar {
-  width: 5px;
-}
-
-.accordion .content-bx .accord-content::-webkit-scrollbar-track {
-  background: #fff;
-}
-
-.accordion .content-bx .accord-content::-webkit-scrollbar-thumb {
-  background-color: #4d5459;
-  border-radius: 20px;
+  width: 0 !important;
 }
 
 .accordion .content-bx.active .label::before {
