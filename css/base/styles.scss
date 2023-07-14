@@ -462,6 +462,12 @@ p{
     color: nth($--black-color,5);
     padding-top: 30px;
   }
+  .about-content {
+    @include large-device(max-width){
+      display: flex;
+      justify-content: space-evenly !important;
+    }
+  }
 }
 
 .about-page-desc{
@@ -775,11 +781,11 @@ left: -40px !important;
 }
 
 .footer-bg {
-  @include small-device(max-width){
+  @include medium-device(max-width){
     padding: 20px 0;
   }
   @include medium-device(min-width){
-    padding: 50px 20px 40px 150px !important;
+    padding: 40px 40px !important;
   }
   .footer-grid{
    display: flex;
@@ -845,7 +851,7 @@ left: -40px !important;
 .end-footer{
   height: 50px;
   @include flex-items;
-  background-color: #5bcaff !important;
+  background-color: nth($--app-darkgrey-color,1) !important;
   @include small-device(max-width){
     height: 110px;
   }
@@ -1427,7 +1433,7 @@ header.sticky {
 
 #toTop {
   position: fixed;
-  bottom: 2.7rem;
+  bottom: 1.7rem;
   right: 15px;
   cursor: pointer;
   display: none;
@@ -1441,8 +1447,8 @@ header.sticky {
 .top-btn {
   background: coral;
   color: #fff;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   box-shadow: #002e5b;
   font-size: 20px;

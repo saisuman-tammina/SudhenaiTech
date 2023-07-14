@@ -31,7 +31,7 @@ window.onscroll = () => {
   }
 };
 
-$('body').append('<div id="toTop" class="top-btn"><img src="assets/images/arrow-1.svg" style="rotate: -90deg; width: 14px;height: 14px;position: relative;top: -5px;"></div>');
+$('body').append('<div id="toTop" class="top-btn"><img src="assets/images/arrow-1.svg" style="rotate: -90deg; width: 14px;height: 14px;position: relative;top: -3px;"></div>');
 $(window).on('scroll', function () {
   if ($(this).scrollTop() != 0) {
     $('#toTop').fadeIn();
