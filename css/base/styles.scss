@@ -862,10 +862,12 @@ left: -40px !important;
     &:hover{
       // border: 1px solid #fff;
       // border-radius: 15px;
-      color: #0093E9 ;
+      border-radius: 20px;
       display: inline-block;
-      @include large-device(max-width){
-        width: auto;
+      width: auto;
+      @include large-device(min-width){
+        border-radius: 20px;
+        border-bottom: 1px solid #00f2fe;
       }
      }
   }
@@ -1267,7 +1269,32 @@ header.sticky {
     display: none;
   }
 }
-
+@include large-device(min-width){
+.menu-button {
+  position: relative;
+  width: 50%;
+  text-align: center;
+&::after{
+  content: "";
+  width: 4px;
+  height: 80%;
+  background-color: rgb(95, 87, 87);
+  position: absolute;
+  right: 0px;
+  opacity: 0.8;
+  top: 0;
+  border-radius: 50px;
+  bottom: 0;
+  margin: auto;
+  }
+  &:nth-child(3){
+    &::after{
+      content: "";
+      display: none;
+      } 
+  }
+}
+}
 .our-clients {
   margin: 90px 0;
   position: relative;
@@ -1705,14 +1732,14 @@ h5 {
     display: flex !important;
     justify-content: space-around;
     top: 82px !important;
-    animation: cards 1s ;
+    animation: cards 500ms ;
     transition: 300ms;
   }
   .dropdown:hover .dropdown-menu {
     display: flex;
     justify-content: space-around;
     top: 82px !important;
-    animation: cards 2s;
+    animation: cards 500ms;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 
   }
