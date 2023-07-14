@@ -22,7 +22,6 @@
     <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
     <script>
         window.addEventListener('scroll', function() {
         let header = document.querySelector('header');
@@ -1173,14 +1172,55 @@
         });
     })
     </script>
-  <script>
-    var typing=new Typed(".text", {
-       strings: ["", "Clients"],
-       typeSpeed: 100,
-       backSpeed: 40,
-       loop: true,
-   });
-</script>
+    <script>
+        var words = ['Clients'],
+        part,
+        i = 0,
+        offset = 0,
+        len = words.length,
+        forwards = true,
+        skip_count = 0,
+        skip_delay = 15,
+        speed = 80;
+        var wordflick = function () {
+        setInterval(function () {
+        if (forwards) {
+            if (offset >= words[i].length) {
+            ++skip_count;
+            if (skip_count == skip_delay) {
+                forwards = false;
+                skip_count = 0;
+            }
+            }
+        }
+        else {
+            if (offset == 0) {
+            forwards = true;
+            i++;
+            offset = 0;
+            if (i >= len) {
+                i = 0;
+            }
+            }
+        }
+        part = words[i].substr(0, offset);
+        if (skip_count == 0) {
+            if (forwards) {
+            offset++;
+            }
+            else {
+            offset--;
+            }
+        }
+        $('.text').text(part);
+        },speed);
+        };
+
+        $(document).ready(function () {
+        wordflick();
+        });
+
+    </script>
 </body>
 
 </html>

@@ -757,11 +757,10 @@ p {
   font-weight: 800;
   font-size: 40px;
   line-height: 60px;
-  color: #0093E9;
+  color: #000084;
 }
 
 .text {
-  font-family: sans-serif !important;
   color: #0093E9;
 }
 

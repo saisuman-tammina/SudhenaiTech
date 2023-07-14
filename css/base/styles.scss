@@ -640,11 +640,10 @@ p{
   font-weight: 800;
   font-size: 40px;
   line-height: 60px;
-  color: nth($--app-blue-color,5);
+  color: nth($--app-blue-color,2);
 }
 
 .text{
-  font-family: sans-serif !important;
   color: nth($--app-blue-color,5);
 }
 
