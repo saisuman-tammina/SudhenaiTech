@@ -16,7 +16,7 @@ $(document).ready(function () {
     e.preventDefault();
     $(".content:hidden").slice(0, 4).slideDown();
     if ($(".content:hidden").length == 0) {
-      $("#loadMore").text("No Content").addClass("noContent");
+      $("#loadMore").text("").addClass("noContent");
     }
   });
 
