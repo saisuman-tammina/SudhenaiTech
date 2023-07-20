@@ -8,6 +8,10 @@
 
 body {
   font-family: "Poppins" !important;
+  scroll-behavior: smooth;
+}
+img{
+  object-fit: contain
 }
 p{
   @include paragraph-styles;
@@ -2376,4 +2380,9 @@ lottie-player{
 }
 .noContent{
   display: none !important;
+}
+@include large-device(min-width){
+#section2 , #mision, #commitments {
+  height: calc(100vh - 15vh) !important;
+}
 }

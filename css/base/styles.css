@@ -2,6 +2,12 @@
 /* styles starts from here */
 body {
   font-family: "Poppins" !important;
+  scroll-behavior: smooth;
+}
+
+img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 p {
@@ -2209,4 +2215,10 @@ input[type=text] {
 
 .noContent {
   display: none !important;
+}
+
+@media (min-width: 991px) {
+  #section2, #mision, #commitments {
+    height: 85vh !important;
+  }
 }/*# sourceMappingURL=styles.css.map */
