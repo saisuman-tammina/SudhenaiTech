@@ -1718,29 +1718,20 @@ h5 {
     border-radius: 8px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 10px -6px 73px -17px;
     height: auto;
-    background: #8b8a8a;;
+    background: #010080;
     position: relative;
 
     h3{
-      background-image: linear-gradient(
-        -225deg,
-        #231557 0%,
-        #44107a 29%,
-        #ff1361 67%,
-        #fff800 100%
-      );
-      background-size: auto auto;
-      background-clip: border-box;
-      background-size: 200% auto;
       color: #fff;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: textclip 4s linear infinite;
       display: inline-block;
+      padding-bottom: 25px;
     } 
     p{
       color: #fff;
+    }
+    button{
+      background-color: #ffff;
+      color: #010080;
     }
   }
 }
