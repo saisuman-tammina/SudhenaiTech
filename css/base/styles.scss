@@ -295,6 +295,7 @@ p{
     padding: 0;
     @include extralarge-device(min-width){
     padding: 0px 9px;
+    text-align: left;
     }
     list-style: none;
     a {
@@ -866,11 +867,12 @@ left: -40px !important;
   ul li  a{
     color: nth($--black-color,1);
     position: relative;
+    width: auto;
     &:hover{
       // border: 1px solid #fff;
       // border-radius: 15px;
       text-align: left;
-      width: auto;
+      // width: auto;
       @include large-device(min-width){
         border-bottom: 1px solid #00f2fe;
       }
@@ -1293,6 +1295,10 @@ header.sticky {
   border-radius: 50px;
   bottom: 0;
   margin: auto;
+  left: 100%;
+  @include extralarge-device(min-width){
+    left: Calc(100% - 20%) !important;
+  }
   }
   &:nth-child(3){
     &::after{
@@ -1708,6 +1714,9 @@ h5 {
     border-radius: 8px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 10px -6px 73px -17px;
     height: auto;
+    background: #8b8a8a;;
+    position: relative;
+
     h3{
       background-image: linear-gradient(
         -225deg,
@@ -1726,6 +1735,9 @@ h5 {
       animation: textclip 4s linear infinite;
       display: inline-block;
     } 
+    p{
+      color: #fff;
+    }
   }
 }
 
@@ -1772,14 +1784,14 @@ h5 {
   .dropdown-menu.show {
     display: flex !important;
     justify-content: space-around;
-    top: 82px !important;
+    top: 97px !important;
     animation: cards 500ms ;
     transition: 300ms;
   }
   .dropdown:hover .dropdown-menu {
     display: flex;
     justify-content: space-around;
-    top: 82px !important;
+    top: 97px !important;
     animation: cards 500ms;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 
@@ -1789,12 +1801,12 @@ h5 {
 @keyframes cards {
   0%{
     opacity: 0;
-    transform: translate3d(0, -6%, 0);
+    transform: translate3d(0, -5%, 0);
 
   }
   100%{
     opacity: 1;
-    transform: translate3d(0, 1%, 0);
+    transform: translate3d(0, 0%, 0);
     
   }
 }
