@@ -487,7 +487,7 @@ p{
 }
 
 .industrial-card{
-  @include width-height(auto, 360px);
+  @include width-height(auto, 320px);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
   display: grid;
@@ -532,6 +532,9 @@ p{
       animation: opacityChange 3s infinite alternate;
       // box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     }
+  }
+  .card-title{
+    padding: 15px 0px;
   }
 }
 
