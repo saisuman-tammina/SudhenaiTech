@@ -303,8 +303,8 @@ p{
     }
     list-style: none;
     a {
-      font-size: 18px;
-      font-weight: 400;
+      font-size: 16px;
+      font-weight: 300;
       display: inline-block;
       text-align: left;
       @include large-device(max-width){
@@ -875,6 +875,8 @@ left: -40px !important;
     color: nth($--black-color,1);
     position: relative;
     width: auto;
+    font-size: 14px;
+    font-weight: 300;
     &:hover{
       // border: 1px solid #fff;
       // border-radius: 15px;

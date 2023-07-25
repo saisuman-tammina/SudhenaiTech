@@ -237,8 +237,8 @@ p {
   }
 }
 .menu-items li a {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
   display: inline-block;
   text-align: left;
 }
@@ -797,6 +797,8 @@ p {
   color: #000;
   position: relative;
   width: auto;
+  font-size: 14px;
+  font-weight: 300;
 }
 .dropdown-menus ul li a:hover {
   text-align: left;
