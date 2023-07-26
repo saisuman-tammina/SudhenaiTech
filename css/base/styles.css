@@ -2223,4 +2223,64 @@ input[type=text] {
   #section2, #mision, #commitments {
     height: 85vh !important;
   }
+}
+.carrer-parent {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.carrer-parent .career-card {
+  background: #fff;
+  position: absolute;
+  width: 500px;
+  height: 70%;
+  display: grid;
+  place-content: center;
+  padding: 0px 20px;
+  right: -35%;
+}
+.carrer-parent .career-card h1 {
+  color: #000084;
+  font-weight: 800;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.carrer-parent .career-card p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.careers-label {
+  border-bottom: 2px solid rgba(99, 99, 99, 0.4117647059);
+}
+.careers-label span {
+  color: #636363;
+}
+.careers-label .job-details {
+  color: rgb(226, 73, 73);
+  font-size: 24px;
+}
+.careers-label .details-text {
+  font-size: 14px;
+  font-weight: 400;
+  width: 80%;
+  color: #636363;
+}
+
+.apply-card {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.apply-now {
+  width: 130px;
+  height: 40px;
+  border: 2px solid rgba(99, 99, 99, 0.4117647059);
+  color: #000;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #fff;
 }/*# sourceMappingURL=styles.css.map */

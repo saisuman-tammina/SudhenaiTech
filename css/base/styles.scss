@@ -2382,3 +2382,70 @@ lottie-player{
   height: calc(100vh - 15vh) !important;
 }
 }
+
+// .carrer-bg{
+//   background-image: url('../../assets/images/Careersdb.svg');
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     width: 100%;
+//     height: 100vh;
+//     background-position: right;
+//     background-position-y: top;
+// }
+.carrer-parent{
+position: relative;
+display: flex;
+align-items: center;
+  .career-card{
+  background: #fff;
+  position: absolute;
+  width: 500px;
+  height: 70%;
+  display: grid;
+  place-content: center;
+  padding: 0px 20px;
+  right: -35%;
+  h1{
+    color: #000084;
+    font-weight: 800;
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+}
+.careers-label{
+  border-bottom: 2px solid #63636369;
+  span{
+    color: #636363;
+  }
+  .job-details{
+    color: rgba(226, 73, 73, 1);
+    font-size: 24px;
+  }
+  .details-text{
+    font-size: 14px;
+    font-weight: 400;
+    width: 80%;
+    color:  #636363;
+  }
+}
+.apply-card{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.apply-now{
+  width: 130px;
+  height: 40px;
+  border: 2px solid  #63636369;
+  color:  #000;
+ border-radius: 4px;
+ font-size: 16px;
+ font-weight: 400;
+ background-color: #fff;
+}
