@@ -2459,3 +2459,30 @@ align-items: center;
   right: 0 !important;
  }
 }
+.blog-card{
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0px 0px 5px 5px;
+  .blog-text{
+    font-weight: 500;
+    font-size: 18px;
+    width: 75%;
+  }
+}
+.recent-blogs{
+  color: #000084;
+  font-weight: 700;
+}
+.blogs-texts{
+  color: #000;
+}
+
+.blog-cards{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  p{
+    padding: 20px 10px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+}
