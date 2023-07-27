@@ -2494,3 +2494,115 @@ align-items: center;
     width: 75%;
   }
 }
+
+.template-btn{
+  background-color: #1a1a19;
+  border-radius: 5px;
+  padding: 8px 10px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.faq-card{
+  width: 500px;
+  background-color: #007bb5;
+  box-shadow: -15px 15px 64px 5px #000;
+}
+.cquestion-faq{
+  z-index: 9999;
+  color: #fff;
+  padding: 20px 0px;
+  width: 70%;
+  margin: auto;
+  .faq-text{
+    line-height: 1.8;
+  }
+  .faq-list{
+    li{
+      background-color: #fff;
+      color: #000;
+      display: inline-block;
+      padding: 10px 40px 10px 20px;
+      border-radius: 4px;
+      margin: 3px 0px;
+    }
+  }
+}
+
+.rating {
+  float:left;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+ follow these rules. Every browser that supports :checked also supports :not(), so
+ it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+  clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+  float:right;
+  width:1em;
+  padding:0 .1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:200%;
+  line-height:1.2;
+  color:#ddd;
+  text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+  content: '★ ';
+}
+
+.rating > input:checked ~ label {
+  color: #f70;
+  text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: gold;
+  text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #ea0;
+  text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+  position:relative;
+  top:2px;
+  left:2px;
+}
+
+
+
+
+
+
+
+/* my stuff */
+#status, button {
+  margin: 20px 0;
+}
+
+.rating-card{
+  display: grid;
+  place-content: center;
+}
+
+.faq-border{
+  border-bottom: 2px solid rgba(99, 99, 99, 0.4117647059);
+  width: 75%;
+  margin: auto;
+}
