@@ -1143,6 +1143,7 @@ header {
   top: 0;
   left: 0;
   z-index: 10000;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 header.sticky {
@@ -2201,6 +2202,25 @@ input[type=text] {
 .accordion .content-bx .accord-content::-webkit-scrollbar {
   width: 0 !important;
 }
+.accordion .content-bx .faq-label {
+  background-color: transparent;
+  color: #000;
+  padding: 20px 20px 10px 0px;
+  border-bottom: 2px solid;
+  border-radius: 0;
+}
+.accordion .content-bx .faq-label::before {
+  background-color: #000084;
+  width: 40px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  z-index: 999;
+  top: 25px;
+  border-radius: 8px;
+}
 
 .accordion .content-bx.active .label::before {
   content: url(../../assets/images/icons8-collapse-arrow-30.png);
@@ -2214,6 +2234,13 @@ input[type=text] {
   border-image-slice: 1;
   border-image-source: linear-gradient(331deg, #0093E9 0%, #80D0C7 100%);
   border-top: 0;
+}
+.accordion .content-bx.active .accord-content.faq-h {
+  height: auto;
+  overflow-y: scroll;
+}
+.accordion .content-bx.active .accord-content.faq-h p {
+  margin-bottom: auto;
 }
 
 .noContent {
@@ -2272,7 +2299,7 @@ input[type=text] {
 
 .apply-card {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -2432,4 +2459,65 @@ input[type=text] {
   border-bottom: 2px solid rgba(99, 99, 99, 0.4117647059);
   width: 75%;
   margin: auto;
+}
+
+.faq-parent h1 {
+  color: #000084;
+  font-weight: 600;
+  font-size: 6rem;
+  text-align: center;
+}
+.faq-parent h6 {
+  color: #000084;
+  font-weight: 500;
+  font-size: 40px;
+}
+.faq-parent .fqa-cards .first-card {
+  text-align: center;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.faq-parent .fqa-cards .first-card h4 {
+  color: #000084;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.faq-parent .fqa-cards .first-card p {
+  font-weight: 400;
+}
+.faq-parent .fqa-cards .second-card {
+  text-align: center;
+}
+@media (min-width: 766px) {
+  .faq-parent .fqa-cards .second-card {
+    position: absolute;
+    width: 25%;
+    bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .faq-parent .fqa-cards .blub-img {
+    position: relative;
+    left: 50px;
+  }
+  .faq-parent .fqa-cards .knowlodge-img {
+    position: relative;
+    right: 50px;
+  }
+  .faq-parent .fqa-cards .chirt-img {
+    position: relative;
+    left: 11.8em;
+    top: -100px;
+  }
+  .faq-parent .fqa-cards .seting-img {
+    position: relative;
+    left: 7em;
+    top: -100px;
+  }
+}
+@media (max-width: 766px) {
+  .faq-parent .faq-imgs {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
