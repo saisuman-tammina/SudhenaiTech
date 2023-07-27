@@ -1179,6 +1179,11 @@ header.sticky .nav-styles {
   padding: 8px 45px;
 }
 
+.fqa-height-common {
+  height: 300px;
+  overflow-y: auto;
+}
+
 .selected {
   color: #000084 !important;
   border-bottom: 3px solid gray;
